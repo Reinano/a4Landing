@@ -36,7 +36,7 @@
     background-size: contain;
   }
   &__scrollToTop{
-    float: left;
+    float: right;
     display: block;
     position: relative;
     width: 70px;
@@ -78,9 +78,22 @@
   &__downloadLinks{
 
   }
+  &__row{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__legalInformation{
     font-style: normal;
     font-weight: normal;
+    max-width: 736px;
     font-size: 17px;
     line-height: 140%;
     letter-spacing: 0.02em;
