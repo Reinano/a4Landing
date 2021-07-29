@@ -41,8 +41,8 @@ const Footer = () => {
                     <div className='footer__scrollToTop'> </div>
                 </div>
                 <p className='footer__legalInformation'>
-                    Vauban is a trading name of Vauban Technologies Limited, a company
-                    incorporated in England and Wales (11128704) with Registered Office and Business address at 1 Frederick's Place, London EC2R 8AE, United Kingdom.
+                    Vauban is&nbsp;a&nbsp;trading name of&nbsp;Vauban Technologies Limited, a&nbsp;company
+                    incorporated in&nbsp;England and Wales (11128704) with Registered Office and Business address at&nbsp;1&nbsp;Frederick&rsquo;s Place, London EC2R 8AE, United Kingdom.
                 </p>
             </div>
         </div>
