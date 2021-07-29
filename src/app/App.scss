@@ -7,9 +7,22 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 //   ---     HUGE IMPORTS HERE LIKE MODULES OR HUGE PINUSES   ---   //
 
 @import './components/Landing/_landing.scss';
-
-
