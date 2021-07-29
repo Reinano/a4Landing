@@ -1,0 +1,93 @@
+.roadmap{
+  &__phases{
+    margin-top: 90px;
+    border-left: 3px solid #452A6C;
+    margin-left: 32px;
+  }
+  &__phaseContainer{
+    position: relative;
+  }
+  &__phaseIcon{
+    width: 63px;
+    height: 63px;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    &_1{
+      background: #452A6C url('./../../../../src/img/phase_1.svg') no-repeat center;
+    }
+    &_2{
+      background: #452A6C url('./../../../../src/img/phase_2.svg') no-repeat center;
+    }
+    &_3{
+      background: #452A6C url('./../../../../src/img/phase_3.svg') no-repeat center;
+    }
+    &_4{
+      background: #452A6C url('./../../../../src/img/phase_4.svg') no-repeat center;
+    }
+  }
+  &__phaseTitle{
+    margin-left: calc(36px + 32px);
+    margin-bottom: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+  &__phaseSubtitle{
+    margin-left: calc(36px + 32px);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #CDF55B;
+    &_pink{
+      color: #EE58FF;
+    }
+    &_blue{
+      color: #53E1EA;
+    }
+    &_yellow{
+      color: #FFEF5C;
+    }
+  }
+  &__phaseList{
+    list-style: none;
+    margin-top: 83px;
+    padding-left: calc(36px + 32px + 20px + 27px);
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 60px;
+  }
+  &__phaseItem{
+    position: relative;
+    padding-bottom: calc(90px - 60px);
+    max-width: 250px;
+    &:after{
+      content: '';
+      position: absolute;
+      left: calc(-27px - 20px);
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background: url('./../../../../src/img/plus_spot.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__phaseItemText{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    &_bold{
+      font-weight: bold;
+    }
+  }
+}

@@ -2,7 +2,8 @@
 //   ---     ADD COMPONENTS STYLES HERE   ---   //
 
 @import './../Footer/_footer.scss';
-@import './../SocialMedia/_socialMedia.scss';
+@import '../SocialMedia/_socialmedia.scss';
+@import '../Roadmap/_roadmap.scss';
 
 
 //   ---     SOME OTHERS STYLES YOLO   ---   //
@@ -22,6 +23,9 @@
     letter-spacing: 0.02em;
     color: #30125C;
     margin-bottom: 29px;
+    &_white{
+      color: #ffffff;
+    }
   }
   &__number{
     display: inline-block;
@@ -32,6 +36,10 @@
     letter-spacing: 0.02em;
     color: #30125C;
     margin-bottom: 20px;
+    &_green{
+      margin-top: 107px;
+      color: #CDF55B;
+    }
   }
   &__par{
     font-style: normal;
@@ -42,6 +50,11 @@
     color: #30125C;
     &_bold{
       font-weight: bold;
+    }
+  }
+  &__background{
+    &_purple{
+      background: #30125C;
     }
   }
 }
