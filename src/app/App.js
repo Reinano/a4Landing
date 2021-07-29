@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import './App.scss';
@@ -10,9 +9,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <Switch>
-            <Route exact path='/' component={Landing}/>
+            <Route exact path='/' component={Landing}/> 
         </Switch>
       </BrowserRouter>
     </>
