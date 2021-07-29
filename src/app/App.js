@@ -1,7 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import './styles/App.css';
+
+import './App.scss';
+
 import Landing from "./components/Landing/Landing";
 
 function App() {
