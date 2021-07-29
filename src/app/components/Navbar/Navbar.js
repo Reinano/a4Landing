@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import flagicon from '../../../../src/img/flagicon.svg';
+import strelka from '../../../../src/img/strelka.svg';
 
 const Navbar = () =>{
   // const [click, setClick] = useState(false);
@@ -11,11 +13,11 @@ const Navbar = () =>{
 
   return (
     <>
-      <header className='header'>
-        <div className="container">
-          <nav className='navbar'>
-            <div className="navbar__logo">
-              <NavLink to='/'className='logo'></NavLink>
+      <div className="container">
+        <header className='header'>
+          <nav className='nav'>
+            <div className="nav__logo nav__logo_purple">
+              <NavLink to='/'className='nav__logo-link'></NavLink>
             </div>
             <ul className="nav__menu">
               <li className="nav__list"><Link to='/about' className='nav__link'>About</Link></li>
@@ -24,14 +26,16 @@ const Navbar = () =>{
               <li className="nav__list"><Link to='/roadmap' className='nav__link'>RoadMap</Link></li>
               <li className="nav__list"><Link to='/social' className='nav__link'>Social</Link></li>
             </ul>
-            <button className="buttonLanguage">
-              <img src="./../../../../src/img/flagicon.svg" alt="flagicon"/>
-              <a href="" className="buttonLanguage__item">Russian</a>
-              <img src="./../../../../src/img/strelka.svg"></img>
-            </button>
+            <div className="nav__languageItem">
+              <img src={flagicon} alt="flagicon"/>
+              <button className="nav__languageItemBtn nav__languageItemBtn_bg">
+                <a href="" className="nav__languageItemBtn_text">Russian</a>
+              </button>
+              <img src={strelka} alt="strelka"/>
+            </div>
           </nav>
-        </div>
-      </header>
+        </header>
+      </div>
     </>
   );
 };
