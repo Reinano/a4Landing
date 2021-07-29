@@ -5,6 +5,7 @@
 @import '../SocialMedia/_socialmedia.scss';
 @import '../Roadmap/_roadmap.scss';
 @import '../Navbar/navbar.scss';
+@import '../SwapCalculator/_swapcalculator.scss';
 
 
 //   ---     SOME OTHERS STYLES YOLO   ---   //
@@ -41,6 +42,9 @@
       margin-top: 107px;
       color: #CDF55B;
     }
+    &_pink{
+      color: #8532FD;
+    }
   }
   &__par{
     font-style: normal;
@@ -56,6 +60,11 @@
   &__background{
     &_purple{
       background: #30125C;
+    }
+  }
+  &__maxWidth{
+    &_430{
+      max-width: 430px;
     }
   }
 }
