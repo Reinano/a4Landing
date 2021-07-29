@@ -1,0 +1,90 @@
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  &__logo{
+    display: block;
+    position: relative;
+    width: 102px;
+    height: 42px;
+    background: url('./../../../../src/img/a4logo.svg') no-repeat center;
+    background-size: contain;
+    margin-bottom: 62px;
+    &_purple{
+      color: #30125C;
+    }
+  }
+  &__googlePlay{
+    float: left;
+    display: block;
+    position: relative;
+    width: 217px;
+    height: 70px;
+    background: url('./../../../../src/img/GooglePlayImage.svg') no-repeat center;
+    background-size: contain;
+  }
+  &__appStore{
+    float: left;
+    display: block;
+    position: relative;
+    width: 206px;
+    height: 70px;
+    margin-right: 54px;
+    background: url('./../../../../src/img/AppStoreImage.svg') no-repeat center;
+    background-size: contain;
+  }
+  &__scrollToTop{
+    float: left;
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: url('./../../../../src/img/scrollToTop.svg') no-repeat center;
+    background-size: contain;
+  }
+  &__description{
+    width: 315px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+    &_bold{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #30125C;
+    }
+  }
+  &__navigationList{
+    height: 100%;
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__downloadLinks{
+
+  }
+  &__legalInformation{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+    opacity: 0.5;
+  }
+}
