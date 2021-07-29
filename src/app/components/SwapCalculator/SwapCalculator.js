@@ -4,7 +4,7 @@ const SwapCalculator = () => {
 
   return (
       <>
-          <div className='container'>
+          <div className='container relative'>
 
               <div className='blurryBubble_green'> </div>
               <div className='blurryBubble_pink'> </div>

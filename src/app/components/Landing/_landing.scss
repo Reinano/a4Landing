@@ -1,13 +1,4 @@
 
-//   ---     ADD COMPONENTS STYLES HERE   ---   //
-
-@import './../Footer/_footer.scss';
-@import '../SocialMedia/_socialmedia.scss';
-@import '../Roadmap/_roadmap.scss';
-@import '../Navbar/navbar.scss';
-@import '../SwapCalculator/_swapcalculator.scss';
-
-
 //   ---     SOME OTHERS STYLES YOLO   ---   //
 
 .container{
@@ -15,7 +6,9 @@
   margin: 0 auto;
   height: auto;
 }
-
+.relative{
+  position: relative;
+}
 .common{
   &__h2{
     font-style: normal;
@@ -38,6 +31,7 @@
     letter-spacing: 0.02em;
     color: #30125C;
     margin-bottom: 20px;
+    z-index: 10;
     &_green{
       margin-top: 107px;
       color: #CDF55B;
@@ -68,3 +62,13 @@
     }
   }
 }
+
+
+//   ---     ADD COMPONENTS STYLES HERE   ---   //
+
+@import '../Navbar/navbar.scss';
+@import './../Footer/_footer.scss';
+@import '../SocialMedia/_socialmedia.scss';
+@import '../Roadmap/_roadmap.scss';
+@import '../SwapCalculator/_swapcalculator.scss';
+@import '../Emission/_emission.scss';
