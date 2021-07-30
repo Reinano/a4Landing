@@ -5,7 +5,7 @@ const SocialMedia = () => {
   return (
       <>
           <div className='socialMedia__topStripe'> </div>
-          <div className='container socialMedia__container'>
+          <section className='container socialMedia__container' name='social'>
 
               <span className='common__number'>
                   07
@@ -27,7 +27,7 @@ const SocialMedia = () => {
               </div>
 
               <div className='socialMedia__background'> </div>
-          </div>
+          </section>
       </>
 
   );

@@ -4,7 +4,7 @@ const Roadmap = () => {
 
   return (
       <>
-          <div className='common__background_purple'>
+          <section className='common__background_purple' name='roadmap'>
               <div className='container'>
                     <span className='common__number common__number_green'>
                         06
@@ -146,7 +146,7 @@ const Roadmap = () => {
                   </div>
 
               </div>
-          </div>
+          </section>
       </>
 
   );
