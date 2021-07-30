@@ -1,29 +1,31 @@
 import React from 'react';
+import {_t} from "../common/translator";
+import {LanguageContext} from "../common/LanguageContext";
 
 const HeroScreen = () => {
 
-
+  const { lang } = React.useContext(LanguageContext);
 
   return(
     <div className="heroscreen__background">
       <div className="container">
         <section className="heroscreen">
           <h1 className="heroscreen__header">
-            Binance Smart Chain Leveraged Farming Made Easy With <span className='heroscreen__header_span'>A4 Tokens</span>
+            {_t('hero-screen-heading', lang)}<span className='heroscreen__header_span'>A4 Tokens</span>
           </h1>
           <div className="heroscreen__description">
-            Increase Your Assets In Both Bull And Bear Markets. And also get strong leverage without the risk of losing capital.
+            {_t('hero-screen-small-text', lang)}
           </div>
           <div className="heroscreenStore">
-            <div className="heroscreenStore__appStore"></div>
-            <div className="heroscreenStore__googlePlay"></div>
+            <div className="heroscreenStore__appStore"> </div>
+            <div className="heroscreenStore__googlePlay"> </div>
           </div>
 
           <div className="heroscreen__background_img">
 
           </div>
 
-          <div className="heroscreen__background_green"></div>
+          <div className="heroscreen__background_green"> </div>
         </section>
       </div>
     </div>
