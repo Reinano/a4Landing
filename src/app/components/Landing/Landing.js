@@ -7,6 +7,7 @@ import HeroScreen from "../HeroScreen/HeroScreen";
 import SwapCalculator from "../SwapCalculator/SwapCalculator";
 import Emission from "../Emission/Emission";
 import CountDown from "../CountDown/CoutDown";
+import About from "../About/About";
 
 const Landing = () => {
     return (
@@ -14,6 +15,7 @@ const Landing = () => {
             <Navbar/>
             <HeroScreen/>
             <CountDown/>
+            <About/>
             <Emission/>
             <SwapCalculator/>
             <Roadmap/>
