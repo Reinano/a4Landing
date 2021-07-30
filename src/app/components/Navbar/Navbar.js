@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import flagicon from '../../../../src/img/flagicon.svg';
 import strelka from '../../../../src/img/strelka.svg';
 import {scrollTo} from "../common/scroll";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 const Navbar = () =>{
   // const [click, setClick] = useState(false);

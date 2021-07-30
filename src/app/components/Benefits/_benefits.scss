@@ -1,0 +1,67 @@
+.benefits {
+  padding-top: 116px;
+  padding-bottom: 186px;
+  &Container {
+    width: 100%;
+
+    &__background {
+      background-color: #F9FBFC;
+    }
+  }
+
+  &__title {
+    width: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 50px;
+    margin-top: 64px;
+  }
+
+  &__item {
+    display: flex;
+    grid-gap: 50px;
+    align-items: center;
+
+    &_text {
+      max-width: 288px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+
+    &Icon {
+      width: 100px;
+      height: 110px;
+      position: relative;
+
+      &_a4{
+        background: url('../../../img/benefitsimages/a4icon.svg')no-repeat center;
+      }
+      &_safe{
+        background: url('../../../img/benefitsimages/safeicon.svg')no-repeat center;
+      }
+      &_transparency{
+        background: url('../../../img/benefitsimages/transparencyicon.svg')no-repeat center;
+      }
+      &_leverage{
+        background: url('../../../img/benefitsimages/leverageicon.svg')no-repeat center;
+      }
+      &_liquid{
+        background: url('../../../img/benefitsimages/liquidicon.svg')no-repeat center;
+      }
+    }
+  }
+
+}
