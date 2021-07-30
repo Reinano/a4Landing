@@ -8,6 +8,7 @@ import SwapCalculator from "../SwapCalculator/SwapCalculator";
 import Emission from "../Emission/Emission";
 import CountDown from "../CountDown/CoutDown";
 import About from "../About/About";
+import Benefits from "../Benefits/Benefits";
 
 const Landing = () => {
     return (
@@ -16,6 +17,7 @@ const Landing = () => {
             <HeroScreen/>
             <CountDown/>
             <About/>
+            <Benefits/>
             <Emission/>
             <SwapCalculator/>
             <Roadmap/>

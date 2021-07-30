@@ -1,8 +1,10 @@
 import React from 'react';
 import flagicon from '../../../../src/img/flagicon.svg';
 import strelka from '../../../../src/img/strelka.svg';
+import {scrollTo} from "../common/scroll";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import {LanguageContext} from '../common/LanguageContext';
+
 
 const LanguageSwitcher = () => {
 
