@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutA4icon from '../../../../src/img/aboutA4.svg';
-
+import {_t} from "../common/translator";
 const About = () => {
 
   return(
@@ -12,11 +12,11 @@ const About = () => {
             <span className='common__number common__number_pink'>
                 01
             </span>
-            <h2 className="about__title">A4 is a lending protocol that allows you to increase your profitability <span>by leveraging funds on the Binance Smart Chain.</span></h2>
+            <h2 className="about__title">{_t('about-title-dark')}<span>{_t('about-title-fade')}</span></h2>
             <div className="about__items">
-              <p className="about__item">The protocol enables lenders to receive <strong>secure and stable income</strong> from cryptocurrency loans.</p>
-              <p className="about__item">Borrowers, in turn, <strong>can obtain loans</strong> to improve the efficiency of their activities.</p>
-              <p className="about__item">A4 will act as a <strong>regulator and guarantor</strong> of the transparency of the transaction.</p>
+              <p className="about__item">{_t('about-item-1-1')}<strong>{_t('about-item-1-2')}</strong>{_t('about-item-1-3')}</p>
+              <p className="about__item">{_t('about-item-2-1')}<strong>{_t('about-item-2-2')}</strong>{_t('about-item-2-3')}</p>
+              <p className="about__item">{_t('about-item-3-1')}<strong>{_t('about-item-3-2')}</strong>{_t('about-item-3-3')}</p>
             </div>
 
             <div className="about__links">
