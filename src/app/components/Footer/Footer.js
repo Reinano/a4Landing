@@ -1,4 +1,6 @@
 import React from 'react';
+import {scrollToTop} from "../common/scroll";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
 
@@ -38,7 +40,7 @@ const Footer = () => {
                         <div className='footer__appStore'> </div>
                         <div className='footer__googlePlay'> </div>
                     </div>
-                    <div className='footer__scrollToTop'> </div>
+                    <Link className='footer__scrollToTop' onClick={scrollToTop()}> </Link>
                 </div>
                 <p className='footer__legalInformation'>
                     Vauban is&nbsp;a&nbsp;trading name of&nbsp;Vauban Technologies Limited, a&nbsp;company

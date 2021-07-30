@@ -3,7 +3,7 @@ import React from "react";
 const Emission = () => {
     return (
         <>
-            <div className='relative'>
+            <section className='relative' name='tokenomics'>
                 <div className="emission__background_circle"> </div>
                 <div className='container'>
 
@@ -34,7 +34,7 @@ const Emission = () => {
                         <div className="emission__circleGraph"> </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
 
     )
