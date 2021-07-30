@@ -1,18 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import flagicon from '../../../../src/img/flagicon.svg';
 import strelka from '../../../../src/img/strelka.svg';
 import {scrollTo} from "../common/scroll";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-
-const Navbar = () =>{
-  // const [click, setClick] = useState(false);
-  //
-  // const handleClick = () => setClick(!click);
-  // // its for mobile burger-menu
+import {LanguageContext} from '../common/LanguageContext';
 
 
+const LanguageSwitcher = () => {
 
+    const { lang, toggleLang } = React.useContext(LanguageContext);
+
+  return (
+      <div className="nav__languageItem" onClick={toggleLang}>
+        <img src={flagicon} alt="flagicon"/>
+        <button className="nav__languageItemBtn nav__languageItemBtn_bg">
+          <div className="nav__languageItemBtn_text">{lang ? 'Russian' : 'English'}</div>
+        </button>
+        <img src={strelka} alt="strelka"/>
+      </div>
+
+  )
+}
+
+const Navbar = () => {
+
+    const { lang } = React.useContext(LanguageContext);
   return (
     <>
       <section className="container" name='top'>
@@ -28,13 +40,7 @@ const Navbar = () =>{
               <li className="nav__list"><Link to='roadmap' smooth={true} className='nav__link'>RoadMap</Link></li>
               <li className="nav__list"><Link to='social' smooth={true} className='nav__link'>Social</Link></li>
             </ul>
-            <div className="nav__languageItem">
-              <img src={flagicon} alt="flagicon"/>
-              <button className="nav__languageItemBtn nav__languageItemBtn_bg">
-                <a href="" className="nav__languageItemBtn_text">Russian</a>
-              </button>
-              <img src={strelka} alt="strelka"/>
-            </div>
+            <LanguageSwitcher/>
           </nav>
         </header>
       </section>

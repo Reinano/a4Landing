@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import bellicon from '../../../../src/img/bellicon.svg';
+import {_t} from "../common/translator";
 
 const CountDown = () => {
   const [timerDays, setTimerDays] = useState('00');
@@ -48,7 +49,7 @@ const CountDown = () => {
       <div className="container">
         <section className="countdownContainer">
           <div className="countdown__item countdown__item_one">
-            <p className="countdown__itemPresale">Before the launch of the presale:</p>
+            <p className="countdown__itemPresale">{_t('countdown')}</p>
           </div>
           <div className="countdown__item countdown__timer">
             <section className="countdown__timerDays">
@@ -56,7 +57,7 @@ const CountDown = () => {
                 {timerDays}
               </p>
               <p>
-                <smal>days</smal>
+                <smal>{_t('days')}</smal>
               </p>
             </section>
               <span>:</span>
@@ -65,7 +66,7 @@ const CountDown = () => {
                 {timerHours}
               </p>
               <p>
-                <smal>hours</smal>
+                <smal>{_t('hours')}</smal>
               </p>
             </section>
               <span>:</span>
@@ -74,7 +75,7 @@ const CountDown = () => {
                 {timerMinutes}
               </p>
               <p>
-                <smal>minutes</smal>
+                <smal>{_t('minutes')}</smal>
               </p>
             </section>
               <span>:</span>
@@ -83,14 +84,14 @@ const CountDown = () => {
                 {timerSeconds}
               </p>
               <p>
-                <smal>seconds</smal>
+                <smal>{_t('seconds')}</smal>
               </p>
             </section>
           </div>
           <div className="countdown__item countdown__item_three">
             <button className="countdown__itemButton countdown__itemButton_purple">
               <img src={bellicon} alt="bellicon"/>
-              Remind me
+              {_t('remind-me')}
             </button>
           </div>
         </section>
