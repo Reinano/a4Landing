@@ -1,0 +1,73 @@
+.countdown {
+
+  &__background {
+    padding: 58px 0;
+    background: #CDF55B;
+  }
+
+  &Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  &__item{
+    min-height: 108px;
+
+    &_one {
+      max-width: 200px;
+    }
+
+    &_three {
+      display: flex;
+      align-items: center;
+    }
+
+    &Presale {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 140%;
+      color: #30125C;
+    }
+
+    &Button {
+      padding: 25px 53px;
+      border: 0px;
+      border-radius: 27px;
+
+      font-size: 21px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.02em;
+
+      color: #FFFFFF;
+      cursor: pointer;
+
+      &_purple {
+        background: #30125C;
+
+      }
+
+      img{
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &__timer {
+    display: flex;
+    max-width: 700px;
+    grid-gap: 53px;
+    text-align: center;
+    color: #30125C;
+
+    section p:first-child, span {
+      font-size: 64px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.02em;
+
+    }
+  }
+}
