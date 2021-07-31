@@ -25,7 +25,7 @@ const About = () => {
                   A4
                   <img src={aboutA4icon} alt=""/>
                 </a>
-                <p>Token Ticker:</p>
+                <p>{_t('token-ticker')}</p>
               </div>
 
               <div className="about__linksItem">
@@ -33,7 +33,7 @@ const About = () => {
                   0x7df1b4de6e770fc48088c1ee7b14d0b41fb7931b
                   <img src={aboutA4icon} alt=""/>
                 </a>
-                <p>Contract Address:</p>
+                <p>{_t('contact-address')}</p>
               </div>
             </div>
           </section>

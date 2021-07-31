@@ -17,7 +17,7 @@ const Roadmap = () => {
                       <div className="roadmap__phaseContainer">
                           <div className="roadmap__phaseIcon roadmap__phaseIcon_1"> </div>
                           <h3 className='roadmap__phaseTitle'>Phase 1</h3>
-                          <span className='roadmap__phaseSubtitle'>May — June 2021</span>
+                          <span className='roadmap__phaseSubtitle'>August — October 2021</span>
                       </div>
                       <ul className='roadmap__phaseList'>
                           <li className="roadmap__phaseItem">
