@@ -1,12 +1,10 @@
 .benefits {
   padding-top: 116px;
   padding-bottom: 186px;
-  &Container {
-    width: 100%;
 
-    &__background {
-      background-color: #F9FBFC;
-    }
+  &__background {
+    width: 100%;
+    background-color: #F9FBFC;
   }
 
   &__title {

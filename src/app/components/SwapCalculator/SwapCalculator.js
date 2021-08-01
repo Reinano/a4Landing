@@ -4,10 +4,11 @@ const SwapCalculator = () => {
 
   return (
       <>
-          <div className='container relative'>
+        <section className="swapCalculator">
+          <div className='blurryBubble_green'> </div>
+          <div className='blurryBubble_pink'> </div>
+          <div className='container'>
 
-              <div className='blurryBubble_green'> </div>
-              <div className='blurryBubble_pink'> </div>
 
               <div className="calculator__wrapper">
                   <div>
@@ -24,6 +25,7 @@ const SwapCalculator = () => {
                   </div>
               </div>
           </div>
+        </section>
       </>
 
   );

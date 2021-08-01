@@ -3,6 +3,7 @@
 
 .container{
   width: 1450px;
+  // width: calc(100% - 470px);
   margin: 0 auto;
   height: auto;
 }
@@ -76,3 +77,4 @@
 @import '../CountDown/countdown.scss';
 @import '../About/about.scss';
 @import '../Benefits/benefits.scss';
+@import '../ExternalResource/externalresource.scss';

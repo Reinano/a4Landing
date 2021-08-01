@@ -1,13 +1,22 @@
 import React from 'react';
 import aboutA4icon from '../../../../src/img/aboutA4.svg';
+import transparensyAboutIcon from '../../../../src/img/transparensyAboutIcon.svg';
+import improveAboutIcon from '../../../../src/img/improveAboutIcon.svg';
 import {_t} from "../common/translator";
 const About = () => {
 
   return(
-    <div className="about__background">
+    <section className="about__background relative">
+        <div className="about__background_imgOne"></div>
+        <div className="about__background_common about__background_imgTwo">
+          <div><img src={transparensyAboutIcon} alt="transparensyAboutIcon"/></div>
+          <p><span>Transparency</span><br/> of the transactions</p>
+        </div>
+        <div className="about__background_common about__background_imgThree">
+          <div><img src={improveAboutIcon} alt="improveAboutIcon"/></div>
+          <p><span>Improve</span><br/>he efficiency</p>
+        </div>
         <div className="container">
-          <div className="about__background_imgOne"></div>
-          <div className="about__background_imgTwo"></div>
           <section className="about">
             <span className='common__number common__number_pink'>
                 01
@@ -21,7 +30,7 @@ const About = () => {
 
             <div className="about__links">
               <div className="about__linksItem">
-                <a href="https://bscscan.com/token/0x7df1b4de6e770fc48088c1ee7b14d0b41fb7931b?a=0x87747d03e1faf4034e31ac756b33a98f99b94c2e" className="about__link">
+                <a href="https://bscscan.com/token/0x7df1b4de6e770fc48088c1ee7b14d0b41fb7931b?a=0x87747d03e1faf4034e31ac756b33a98f99b94c2e" target="_blank" className="about__link">
                   A4
                   <img src={aboutA4icon} alt=""/>
                 </a>
@@ -38,7 +47,7 @@ const About = () => {
             </div>
           </section>
         </div>
-    </div>
+    </section>
   );
 }
 

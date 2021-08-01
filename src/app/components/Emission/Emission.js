@@ -3,7 +3,7 @@ import React from "react";
 const Emission = () => {
     return (
         <>
-            <section className='relative' name='tokenomics'>
+            <section className='emission__background relative' name='tokenomics'>
                 <div className="emission__background_circle"> </div>
                 <div className='container'>
 

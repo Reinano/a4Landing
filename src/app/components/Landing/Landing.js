@@ -9,19 +9,23 @@ import Emission from "../Emission/Emission";
 import CountDown from "../CountDown/CoutDown";
 import About from "../About/About";
 import Benefits from "../Benefits/Benefits";
+import ExternalResource from "../ExternalResource/ExternalResource";
 
 const Landing = () => {
     return (
         <>
             <Navbar/>
-            <HeroScreen/>
-            <CountDown/>
-            <About/>
-            <Benefits/>
-            <Emission/>
-            <SwapCalculator/>
-            <Roadmap/>
-            <SocialMedia/>
+            <main>
+              <HeroScreen/>
+              <CountDown/>
+              <About/>
+              <Benefits/>
+              <ExternalResource/>
+              <Emission/>
+              <SwapCalculator/>
+              <Roadmap/>
+              <SocialMedia/>
+            </main>
             <Footer/>
         </>
     )

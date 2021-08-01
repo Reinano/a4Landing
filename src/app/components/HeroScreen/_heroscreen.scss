@@ -58,18 +58,19 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 350px;
-      height: 350px;
+      width: 398px;
+      height: 616px;
       background: url('../../../img/heroScreenLeftBg.png') no-repeat center;
       background-size: contain;
+      background-position-y: -1em;
     }
     &_img {
       position: absolute;
-      width: 719.27px;
-      height: 810.21px;
+      width: 37.5%;
+      height: 89%;
       top: 0;
-      left: 1100px;
-      background:url('../../../img/heroscreenimg.png');
+      left: 52%;
+      background:url('../../../img/heroscreenimg.png') no-repeat;
     }
   }
 }
