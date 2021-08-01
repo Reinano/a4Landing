@@ -4,12 +4,13 @@ import {_t} from "../common/translator";
 const Benefits = () => {
 
   return(
-    <div className="benefitsContainer benefitsContainer__background">
+    <div className="benefits__background">
       <div className="container">
         <div className="benefits">
           <span className='common__number common__number_pink'>
               02
           </span>
+
           <h2 className="benefits__title">{_t('benefits-title')}</h2>
           <div className="benefits__items">
             <div className="benefits__item">

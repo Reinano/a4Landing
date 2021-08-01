@@ -1,3 +1,28 @@
+.swapCalculator {
+  position: relative;
+
+  .blurryBubble{
+    &_green{
+      width: 800px;
+      height: 800px;
+      background: url('./../../../../src/img/blury_stuff_green.png') no-repeat center;
+      background-size: contain;
+      position: absolute;
+      top: -300px;
+      right: 0;
+    }
+    &_pink{
+      width: 800px;
+      height: 400px;
+      background: url('./../../../../src/img/blury_stuff_pink.png') no-repeat center;
+      background-size: contain;
+      position: absolute;
+      bottom: 50px;
+      left: 25%;
+    }
+  }
+}
+
 .calculator{
   position: relative;
   width: 818px;
@@ -10,25 +35,5 @@
   &__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-.blurryBubble{
-  &_green{
-    width: 800px;
-    height: 800px;
-    background: url('./../../../../src/img/blury_stuff_green.png') no-repeat center;
-    background-size: contain;
-    position: absolute;
-    top: -300px;
-    right: -300px;
-  }
-  &_pink{
-    width: 800px;
-    height: 400px;
-    background: url('./../../../../src/img/blury_stuff_pink.png') no-repeat center;
-    background-size: contain;
-    position: absolute;
-    bottom: 50px;
-    left: 15%;
   }
 }

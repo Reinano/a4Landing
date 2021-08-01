@@ -27,8 +27,8 @@ const Navbar = () => {
     const { lang } = React.useContext(LanguageContext);
   return (
     <>
-      <section className="container" name='top'>
-        <header className='header'>
+      <header className='header'>
+        <div className="container" name="top">
           <nav className='nav'>
             <div className="nav__logo nav__logo_purple">
               <Link to='top' smooth={true} className='nav__logo-link'> </Link>
@@ -42,8 +42,8 @@ const Navbar = () => {
             </ul>
             <LanguageSwitcher/>
           </nav>
-        </header>
-      </section>
+        </div>
+      </header>
     </>
   );
 };

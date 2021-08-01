@@ -21,6 +21,13 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #8532FD;
+}
+button {
+  cursor: pointer;
 }
 li {
   list-style: none;

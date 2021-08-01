@@ -226,6 +226,16 @@ export const useTranslation = (text) => {
                 '' :
                 '';
         }
+        case 'benefits': {
+            return isEng ?
+                'We offer' :
+                'Мы предлагаем';
+        }
+        case 'benefits-item-p-1': {
+            return isEng ?
+                'A4-token insurance using KeepPrice technology ' :
+                'Страховку a4-token за счет KeepPrice';
+        }
 
 
         default: return 'no-translation'
