@@ -1,4 +1,5 @@
 import React from "react";
+import {_t} from "../common/translator";
 
 const Emission = () => {
     return (
@@ -10,27 +11,27 @@ const Emission = () => {
                     <div className="emission__graphContainer relative">
                         <div className='emission__badge emission__badge_1'>
                             <div className="emission__badgeTitle">50%</div>
-                            <span className="emission__badgeSpan emission__badgeSpan_1">Stacking</span>
+                            <span className="emission__badgeSpan emission__badgeSpan_1">{_t('emission-item-1')}</span>
                         </div>
                         <div className='emission__badge emission__badge_2'>
                             <div className="emission__badgeTitle">17,5%</div>
-                            <span className="emission__badgeSpan emission__badgeSpan_2">Hackathon</span>
+                            <span className="emission__badgeSpan emission__badgeSpan_2">{_t('emission-item-2')}</span>
                         </div>
                         <div className='emission__badge emission__badge_3'>
                             <div className="emission__badgeTitle">11,25%</div>
-                            <span className="emission__badgeSpan emission__badgeSpan_3">Team</span>
+                            <span className="emission__badgeSpan emission__badgeSpan_3">{_t('emission-item-3')}</span>
                         </div>
                         <div className='emission__badge emission__badge_4'>
                             <div className="emission__badgeTitle">10%</div>
-                            <span className="emission__badgeSpan emission__badgeSpan_4">Sale</span>
+                            <span className="emission__badgeSpan emission__badgeSpan_4">{_t('emission-item-4')}</span>
                         </div>
                         <div className='emission__badge emission__badge_5'>
                             <div className="emission__badgeTitle">8,75%</div>
-                            <span className="emission__badgeSpan emission__badgeSpan_5">Advertising<br/>campaign</span>
+                            <span className="emission__badgeSpan emission__badgeSpan_5">{_t('emission-item-5')}</span>
                         </div>
                         <div className='emission__badge emission__badge_6'>
                             <div className="emission__badgeTitle">2,5%</div>
-                            <span className="emission__badgeSpan emission__badgeSpan_6">Liquidity<br/>pools</span></div>
+                            <span className="emission__badgeSpan emission__badgeSpan_6">{_t('emission-item-6')}</span></div>
                         <div className="emission__circleGraph"> </div>
                     </div>
                 </div>

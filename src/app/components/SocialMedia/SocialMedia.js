@@ -1,4 +1,5 @@
 import React from 'react';
+import {_t} from "../common/translator";
 
 const SocialMedia = () => {
 
@@ -11,13 +12,12 @@ const SocialMedia = () => {
                   07
               </span>
               <h2 className='common__h2'>
-                  Social networks
+                  {_t('social-title')}
               </h2>
 
               <p className='common__par'>
-                  <span className='common__par common__par_bold'>Follow the news and development of&nbsp;the project,</span><br/>
-                  as&nbsp;well as&nbsp;participate in&nbsp;the life of&nbsp;the community<br/>
-                  on&nbsp;our social networks
+                  <span className='common__par common__par_bold'>{_t('social-par-bold')}</span><br/>
+                  {_t('social-par-fade')}
               </p>
 
               <div className='socialMedia__icons'>
