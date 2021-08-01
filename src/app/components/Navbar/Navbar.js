@@ -1,9 +1,9 @@
 import React from 'react';
 import flagicon from '../../../../src/img/flagicon.svg';
 import strelka from '../../../../src/img/strelka.svg';
-import {scrollTo} from "../common/scroll";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import {LanguageContext} from '../common/LanguageContext';
+import {_t} from "../common/translator";
 
 
 const LanguageSwitcher = () => {
@@ -34,11 +34,11 @@ const Navbar = () => {
               <Link to='top' smooth={true} className='nav__logo-link'> </Link>
             </div>
             <ul className="nav__menu">
-              <li className="nav__list"><Link to='about' smooth={true} className='nav__link'>About</Link></li>
-              <li className="nav__list"><Link to='offer' smooth={true} className='nav__link'>We offer</Link></li>
-              <li className="nav__list"><Link to='tokenomics' smooth={true} className='nav__link'>Tokenomics</Link></li>
-              <li className="nav__list"><Link to='roadmap' smooth={true} className='nav__link'>RoadMap</Link></li>
-              <li className="nav__list"><Link to='social' smooth={true} className='nav__link'>Social</Link></li>
+              <li className="nav__list"><Link to='about' smooth={true} className='nav__link'>{_t('nav-about')}</Link></li>
+              <li className="nav__list"><Link to='offer' smooth={true} className='nav__link'>{_t('nav-offer')}r</Link></li>
+              <li className="nav__list"><Link to='tokenomics' smooth={true} className='nav__link'>{_t('nav-tokenomics')}</Link></li>
+              <li className="nav__list"><Link to='roadmap' smooth={true} className='nav__link'>{_t('nav-roadmap')}</Link></li>
+              <li className="nav__list"><Link to='social' smooth={true} className='nav__link'>{_t('nav-social')}</Link></li>
             </ul>
             <LanguageSwitcher/>
           </nav>

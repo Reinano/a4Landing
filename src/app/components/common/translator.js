@@ -101,6 +101,126 @@ export const useTranslation = (text) => {
                 'of the transparency of the transaction.' :
                 'прозрачности сделки.';
         }
+        case 'token-ticker': {
+            return isEng ?
+                'Token Ticker:' :
+                'Token Ticker:';
+        }
+        case 'contact-address': {
+            return isEng ?
+                'Contract Address:' :
+                'Contract Address:';
+        }
+        case 'benefits-title': {
+            return isEng ?
+                'We offer' :
+                'Мы предлагаем';
+        }
+        case 'benefits-item-1': {
+            return isEng ?
+                'A4-token insurance using KeepPrice technology' :
+                'Страховку a4-token за счет KeepPrice';
+        }
+        case 'benefits-item-2': {
+            return isEng ?
+                'Safe lending to users' :
+                'Безопасное кредитование пользователей';
+        }
+        case 'benefits-item-3': {
+            return isEng ?
+                'Full transparency of smart contracts' :
+                'Полная прозрачность смартконтрактов';
+        }
+        case 'benefits-item-4': {
+            return isEng ?
+                'Leverage positions will allow you to significantly increase your profits quick' :
+                'Позиции с кредитным плечом нашего протокола увеличат вашу прибыль';
+        }
+        case 'benefits-item-5': {
+            return isEng ?
+                'Liquidity pools' :
+                'Пулы ликвидности';
+        }
+        case 'emission-item-1': {
+            return isEng ?
+                'Stacking' :
+                'Стейкинг';
+        }
+        case 'emission-item-2': {
+            return isEng ?
+                'Hackathon' :
+                'Хакатоны';
+        }
+        case 'emission-item-3': {
+            return isEng ?
+                'Team' :
+                'Команда';
+        }
+        case 'emission-item-4': {
+            return isEng ?
+                'Sale' :
+                'Продажа';
+        }
+        case 'emission-item-5': {
+            return isEng ?
+                'Advertising campaign' :
+                'Рекламная кампания';
+        }
+        case 'emission-item-6': {
+            return isEng ?
+                'Liquidity pools' :
+                'Пулы ликвидности';
+        }
+        case 'nav-about': {
+            return isEng ?
+                'About' :
+                'О нас';
+        }
+        case 'nav-offer': {
+            return isEng ?
+                'We offer' :
+                'Мы предлагаем';
+        }
+        case 'nav-tokenomics': {
+            return isEng ?
+                'Tokenomics' :
+                'Токеномика';
+        }
+        case 'nav-roadmap': {
+            return isEng ?
+                'RoadMap' :
+                'Карта';
+        }
+        case 'nav-social': {
+            return isEng ?
+                'Social' :
+                'Соц. сети';
+        }
+        case 'exchange-title': {
+            return isEng ?
+                'Еxchanges, staking and liquidity pools' :
+                'Обмены, стейкинг и пулы ликвидности';
+        }
+        case 'social-title': {
+            return isEng ?
+                'Social networks' :
+                'Мы в социальных сетях';
+        }
+        case 'social-par-bold': {
+            return isEng ?
+                'Follow the news and development of the project,' :
+                'Следите за новостями и развитием проекта,';
+        }
+        case 'social-par-fade': {
+            return isEng ?
+                'as well as participate in the life of the community on our social networks' :
+                'а также участвуйте в жизни сообщества в наших социальных сетях';
+        }
+        case 'footer-license': {
+            return isEng ?
+                'Vauban is a trading name of Vauban Technologies Limited, a company incorporated in England and Wales (11128704) with Registered Office and Business address at 1 Frederick\'s Place, London EC2R 8AE, United Kingdom.' :
+                'Vauban is a trading name of Vauban Technologies Limited, a company incorporated in England and Wales (11128704) with Registered Office and Business address at 1 Frederick\'s Place, London EC2R 8AE, United Kingdom.';
+        }
         case 'a': {
             return isEng ?
                 '' :

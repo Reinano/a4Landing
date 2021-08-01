@@ -1,4 +1,5 @@
 import React from 'react';
+import {_t} from "../common/translator";
 
 const SwapCalculator = () => {
 
@@ -14,8 +15,8 @@ const SwapCalculator = () => {
                       <span className='common__number common__number_pink'>
                           05
                       </span>
-                      <h2 className='common__h2 common__maxWidth_430'>
-                          Еxchanges, staking<br/>and liquidity pools
+                      <h2 className='common__h2 common__maxWidth_480'>
+                          {_t('exchange-title')}
                       </h2>
                   </div>
 
