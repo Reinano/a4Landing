@@ -107,3 +107,32 @@
     opacity: 0.5;
   }
 }
+@media (max-width:1660px){
+
+  .footer__legalInformation {
+    max-width: 630px;
+  }
+}
+@media (max-width: 1440px) {
+  .footer__description {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .footer__column_second {
+    margin-right: 50px;
+  }
+  .footer__legalInformation {
+    max-width: 480px;
+    font-size: 15px;
+  }
+  .footer__appStore {
+    width: 180px;
+    margin-right: 20px;
+  }
+  .footer__googlePlay {
+    width: 180px;
+  }
+}

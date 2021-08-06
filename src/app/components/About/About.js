@@ -2,6 +2,9 @@ import React from 'react';
 import aboutA4icon from '../../../../src/img/aboutA4.svg';
 import transparensyAboutIcon from '../../../../src/img/transparensyAboutIcon.svg';
 import improveAboutIcon from '../../../../src/img/improveAboutIcon.svg';
+import plusspot from '../../../../src/img/plus_spot.svg';
+
+
 import {_t} from "../common/translator";
 const About = () => {
 
@@ -16,6 +19,9 @@ const About = () => {
           <div><img src={improveAboutIcon} alt="improveAboutIcon"/></div>
           <p><span>Improve</span><br/>he efficiency</p>
         </div>
+        <div className="about__background_ball">
+
+        </div>
         <div className="container">
           <section className="about">
             <span className='common__number common__number_pink'>
@@ -23,9 +29,24 @@ const About = () => {
             </span>
             <h2 className="about__title">{_t('about-title-dark')}<span>{_t('about-title-fade')}</span></h2>
             <div className="about__items">
-              <p className="about__item">{_t('about-item-1-1')}<strong>{_t('about-item-1-2')}</strong>{_t('about-item-1-3')}</p>
-              <p className="about__item">{_t('about-item-2-1')}<strong>{_t('about-item-2-2')}</strong>{_t('about-item-2-3')}</p>
-              <p className="about__item">{_t('about-item-3-1')}<strong>{_t('about-item-3-2')}</strong>{_t('about-item-3-3')}</p>
+              <p className="about__item">
+                <div className="about__item_icon">
+
+                </div>
+                {_t('about-item-1-1')}<strong>{_t('about-item-1-2')}</strong>{_t('about-item-1-3')}
+              </p>
+              <p className="about__item">
+                <div className="about__item_icon">
+
+                </div>
+                {_t('about-item-2-1')}<strong>{_t('about-item-2-2')}</strong>{_t('about-item-2-3')}
+              </p>
+              <p className="about__item">
+                <div className="about__item_icon">
+
+                </div>
+                {_t('about-item-3-1')}<strong>{_t('about-item-3-2')}</strong>{_t('about-item-3-3')}
+              </p>
             </div>
 
             <div className="about__links">

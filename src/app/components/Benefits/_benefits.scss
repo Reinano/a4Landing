@@ -11,7 +11,6 @@
     width: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
     line-height: 140%;
     letter-spacing: 0.02em;
     color: #30125C;
@@ -33,33 +32,98 @@
       max-width: 288px;
       font-style: normal;
       font-weight: 300;
-      font-size: 21px;
       line-height: 140%;
       letter-spacing: 0.02em;
       color: #000000;
     }
 
     &Icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100px;
-      height: 110px;
-      position: relative;
+      height: 100px;
+      background: #FFFFFF;
+      background-blend-mode: screen;
+      box-shadow: 0px 12px 10px -10px rgba(133, 50, 253, 1);
+      border-radius: 25px;
+
 
       &_a4{
-        background: url('../../../img/benefitsimages/a4icon.svg')no-repeat center;
+        box-shadow: 0px 12px 10px -10px rgba(38, 228, 226, 1);
+        img {
+          width: 68px;
+          height: 28px;
+        }
       }
       &_safe{
-        background: url('../../../img/benefitsimages/safeicon.svg')no-repeat center;
+
+        img {
+          width: 38.94px;
+          height: 44.93px;
+        }
       }
       &_transparency{
-        background: url('../../../img/benefitsimages/transparencyicon.svg')no-repeat center;
+        img {
+          width: 44px;
+          height: 44px;
+        }
       }
       &_leverage{
-        background: url('../../../img/benefitsimages/leverageicon.svg')no-repeat center;
+        img {
+          width: 38px;
+          height: 44px;
+        }
       }
       &_liquid{
-        background: url('../../../img/benefitsimages/liquidicon.svg')no-repeat center;
+        img {
+          width: 27px;
+          height: 27px;
+        }
       }
     }
   }
 
+}
+
+@media (max-width: 1767px) {
+  .benefits__item {
+    grid-gap: 40px;
+  }
+}
+@media (max-width: 1726px) {
+
+  .benefits__item {
+    grid-gap: 40px;
+
+    &_text {
+      max-width: 220px;
+    }
+  }
+}
+
+@media (max-width: 1660px){
+  .benefits__itemIcon {
+    width: 85px;
+    height: 85px;
+  }
+  .benefits__item_text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1626px){
+
+  .benefits__items {
+    grid-gap: 2%;
+  }
+  .benefits__item {
+    width: 49%;
+    margin-bottom: 50px;
+    grid-gap: 30px;
+  }
+
+  .benefits__item_text {
+    width: auto;
+    max-width: 70%;
+  }
 }

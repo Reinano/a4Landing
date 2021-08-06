@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import flagicon from '../../../../src/img/flagicon.svg';
 import strelka from '../../../../src/img/strelka.svg';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
@@ -23,6 +23,9 @@ const LanguageSwitcher = () => {
 }
 
 const Navbar = () => {
+    const [sidebar, setSidebar] = useState(false);
+
+    const showSidebar = () => setSidebar(!sidebar);
 
     const { lang } = React.useContext(LanguageContext);
   return (
@@ -35,12 +38,27 @@ const Navbar = () => {
             </div>
             <ul className="nav__menu">
               <li className="nav__list"><Link to='about' smooth={true} className='nav__link'>{_t('nav-about')}</Link></li>
-              <li className="nav__list"><Link to='offer' smooth={true} className='nav__link'>{_t('nav-offer')}r</Link></li>
+              <li className="nav__list"><Link to='benefits' smooth={true} className='nav__link'>{_t('nav-offer')}</Link></li>
               <li className="nav__list"><Link to='tokenomics' smooth={true} className='nav__link'>{_t('nav-tokenomics')}</Link></li>
               <li className="nav__list"><Link to='roadmap' smooth={true} className='nav__link'>{_t('nav-roadmap')}</Link></li>
               <li className="nav__list"><Link to='social' smooth={true} className='nav__link'>{_t('nav-social')}</Link></li>
             </ul>
             <LanguageSwitcher/>
+            <div className="navBurgerMenu">
+              <input onClick={showSidebar} className="navBurgerMenu__toogle" id="navBurgerMenu__toogle" type="checkbox"/>
+              <label className={sidebar ? "navBurgerMenu__button navBurgerMenu__button_active" : "navBurgerMenu__button"} for="navBurgerMenu__toogle">
+                <span className={sidebar ? "navBurgerMenu__span navBurgerMenu__span_active" : "navBurgerMenu__span"}></span>
+                <span className={sidebar ? "navBurgerMenu__spanCross navBurgerMenu__spanCross_active" : "navBurgerMenu__spanCross"}></span>
+              </label>
+              <ul className={sidebar ? "navBurgerMenu__box navBurgerMenu__box_active" : "navBurgerMenu__box"}>
+                <li className="navBurgerMenu__list"><Link to='about' smooth={true} className='navBurgerMenu__link'>{_t('nav-about')}</Link></li>
+                <li className="navBurgerMenu__list"><Link to='benefits' smooth={true} className='navBurgerMenu__link'>{_t('nav-offer')}</Link></li>
+                <li className="navBurgerMenu__list"><Link to='tokenomics' smooth={true} className='navBurgerMenu__link'>{_t('nav-tokenomics')}</Link></li>
+                <li className="navBurgerMenu__list"><Link to='roadmap' smooth={true} className='navBurgerMenu__link'>{_t('nav-roadmap')}</Link></li>
+                <li className="navBurgerMenu__list"><Link to='social' smooth={true} className='navBurgerMenu__link'>{_t('nav-social')}</Link></li>
+                <li className="navBurgerMenu__list"><LanguageSwitcher/></li>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>

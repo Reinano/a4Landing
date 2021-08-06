@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 253px;
-  padding-top: 100px;
+  padding: 6.7% 0;
   &__header {
-    max-width: 825px;
+    max-width: 56%;
     font-style: normal;
     font-weight: normal;
     font-size: 67px;
@@ -20,11 +19,10 @@
 
   &__description {
     max-width: 600px;
-    margin-top: 45px;
-    margin-bottom: 163px;
+    margin-top: 4%;
+    margin-bottom: 10%;
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
     line-height: 140%;
     letter-spacing: 0.02em;
 
@@ -35,6 +33,7 @@
     display: flex;
     max-width: 480px;
     justify-content: space-between;
+    margin-bottom: 14%;
     &__appStore {
       width: 220px;
       height: 75px;
@@ -69,8 +68,56 @@
       width: 37.5%;
       height: 89%;
       top: 0;
-      left: 52%;
+      right: 9%;
       background:url('../../../img/heroscreenimg.png') no-repeat;
     }
+  }
+
+}
+
+//Adaptive
+@media (max-width: 1900px) {
+  .heroscreen__header{
+    max-width: 64%;
+  }
+  .heroscreen__background_img{
+    height: 89%;
+    background-size: contain;
+    right: 4%;
+  }
+}
+
+@media (max-width: 1660px) {
+  .heroscreen__header{
+    max-width: 56%;
+    font-size: 56px;
+  }
+
+}
+@media (max-width: 1440px) {
+  .heroscreen__header{
+    max-width: 60%;
+    font-size: 48px;
+  }
+  .heroscreen__description {
+    max-width: 39%;
+  }
+  .heroscreen__background_img{
+    height: 89%;
+  }
+  .heroscreen__background_green {
+    width: 16%;
+    height: 57%;
+  }
+  .heroscreenStore {
+    max-width: 400px;
+    margin-bottom: 4%;
+}
+
+}
+
+@media (max-width: 1200px) {
+  .heroscreen__header{
+    font-size: 40px;
   }
 }

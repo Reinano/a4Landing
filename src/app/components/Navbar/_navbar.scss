@@ -1,14 +1,16 @@
 .header{
   width: 100%;
   height: auto;
-  padding-top: 62px;
-  padding-bottom: 80px;
+  padding: 3.7% 0;
 }
 .nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+
   &__logo{
     display: block;
     position: relative;
@@ -28,12 +30,14 @@
   &__menu{
     display: flex;
     flex-direction: row;
-    grid-gap: 70px;
+    position: absolute;
+    left: 16%;
+    grid-gap: 10%;
     align-items: center;
-    margin-left: -158px;
+
   }
   &__list {
-
+    white-space: nowrap;
   }
   &__link {
     font-size: 17px;
@@ -64,4 +68,178 @@
     }
   }
 
+  &BurgerMenu {
+    display: none;
+
+    &__toogle {
+      opacity: 0;
+    }
+
+    &__button {
+      display: flex; /* используем flex для центрирования содержимого */
+      align-items: center;  /* центрируем содержимое кнопки */
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      cursor: pointer;
+      z-index: 3;
+      border: 1px solid #30125C;
+      box-sizing: border-box;
+      border-radius: 10px;
+      background: #ffffff;
+
+      &_active {
+        z-index: 3;
+        border: 2px solid #ffffff;
+        background: #30125C;
+
+      }
+    }
+
+    &__span {
+      display: block;
+      content: "";
+      width: 22px;
+      height: 2px;
+      position: absolute;
+      background-color: #30125C;
+      font-size: 0;
+      color: transparent;
+      z-index: 2;
+
+      &_active {
+        display: none;
+      }
+
+      &Cross {
+        display: none;
+        content: "";
+        width: 22px;
+        height: 2px;
+        position: absolute;
+        background-color: #ffffff;
+        font-size: 0;
+        color: transparent;
+        transform: rotate(45deg);
+        z-index: 2;
+        &_active {
+          display: block;
+        }
+      }
+      &Cross:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 2;
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+    &__span:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      background-color: #30125C;
+
+    }
+    &__span:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -8px;
+      left: 0;
+      background-color: #30125C;
+
+    }
+    &__box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+      width: 250px;
+      height: auto;
+      padding: 80px 0;
+      transition: 850ms;
+      background-color: #30125C;
+      visibility: hidden;
+      z-index: 1;
+      &_active {
+        visibility: visible;
+        transition: 350ms;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 12px 24px;
+      font-size: 16px;
+      line-height: 24px;
+      line-height: 140%;
+      align: left;
+      vertical-align: top;
+      letter-spacing: 2%;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #30125C;
+      }
+    }
+    &__list {
+      .nav__languageItem {
+        display: block;
+        padding: 12px 24px;
+        font-size: 16px;
+        line-height: 24px;
+        line-height: 140%;
+        align: left;
+        vertical-align: top;
+        letter-spacing: 2%;
+        // color: #ffffff;
+        &:hover {
+          background-color: #ffffff;
+          color: #30125C;
+        }
+        &Btn {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          font-size: 16px;
+          color: #ffffff;
+          &:hover {
+            background-color: #ffffff;
+            color: #30125C;
+          }
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .nav__menu {
+    display: none;
+  }
+  .navBurgerMenu {
+    display: flex;
+  }
+  .nav__languageItem {
+    display: none;
+  }
 }

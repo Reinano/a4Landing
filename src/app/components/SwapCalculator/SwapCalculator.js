@@ -12,7 +12,7 @@ const SwapCalculator = () => {
 
 
               <div className="calculator__wrapper">
-                  <div>
+                  <div className="calculator__title">
                       <span className='common__number common__number_pink'>
                           05
                       </span>

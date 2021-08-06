@@ -2,15 +2,57 @@
   margin-bottom: 178px;
   height: 768px;
 
+  &__innerWrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    display: flex;
+    flex-direction: column;
+    color: #30125C;
+  }
+  &__title {
+    position: relative;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 130%;
+    margin-bottom: 60px;
+
+    &_icon {
+      position: absolute;
+      left: 103%;
+      top: 0;
+      height: 64%;
+      width: 15%;
+      background: url('./../../../../src/img/a4logo.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__desc {
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    &_a4tokens {
+      opacity: 0.7;
+    }
+  }
+
   &__background{
     &_circle{
       display: block;
       position: absolute;
-      left: -385px;
-      top: 136px;
-      bottom: -68px;
-      width: 1395px;
-      height: 864px;
+      left: -20%;
+      top: 18%;
+      bottom: 9%;
+      width: 73%;
+      height: 110%;
       background: url('./../../../../src/img/huge_bg_circle.svg') no-repeat center;
       background-size: contain;
     }
@@ -88,7 +130,6 @@
   &__badgeTitle{
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
     line-height: 140%;
     letter-spacing: 0.02em;
     color: #30125C;
@@ -121,5 +162,73 @@
     &_6{
       color: #A5C34C;
     }
+  }
+}
+//common adaptive
+@media (max-width: 1660px){
+  .emission__graphContainer {
+    width: 722px;
+    height: 678px;
+  }
+  .emission__circleGraph {
+    width: 75%;
+    height: 83%;
+    margin-left: 188px;
+  }
+  .emission__badge_1 {
+    right: 0;
+    top: 0;
+  }
+  .emission__badge_2{
+    top: 0;
+    left: 11%;
+  }
+  .emission__badge_3{
+    left: 0;
+    top: 31%;
+  }
+  .emission__badge_4{
+    top: 65%;
+    left: 14%;
+  }
+  .emission__badge_5{
+    left: 45%;
+    bottom: 6%;
+  }
+  .emission__badge_6{
+    right: 3.7%;
+    bottom: 0;
+  }
+  .emission__title {
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1440px){
+  .emission__title {
+    font-size: 48px;
+    margin-bottom: 25px;
+
+    &_icon {
+      left: 95%;
+    }
+  }
+  .emission__graphContainer {
+    width: 622px;
+    height: 588px;
+  }
+  .emission__circleGraph {
+    margin-left: 162px;
+  }
+}
+
+// adaptive for tablets
+@media (max-width: 1366px){
+  .emission__graphContainer {
+    width: 582px;
+    height: 553px;
+  }
+  .emission__circleGraph {
+    margin-left: 151px;
   }
 }

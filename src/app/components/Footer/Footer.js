@@ -16,7 +16,7 @@ const Footer = () => {
                       Leveraged Farming Made Easy With A4 Tokens.
                   </div>
               </div>
-              <div className='footer__column'>
+              <div className='footer__column footer__column_second'>
                  <ul className='footer__navigationList'>
                     <li>
                        <a>{_t('nav-about')}</a>

@@ -16,7 +16,9 @@
     min-height: 108px;
 
     &_one {
-      max-width: 200px;
+      display: flex;
+      align-items: center;
+      width: 200px;
     }
 
     &_three {
@@ -57,11 +59,15 @@
 
   &__timer {
     display: flex;
-    max-width: 700px;
-    grid-gap: 53px;
+    align-items: center;
+    width: 52%;
+    grid-gap: 7%;
     text-align: center;
     color: #30125C;
 
+    section {
+      width: 90px;
+    }
     section p:first-child, span {
       font-size: 64px;
       font-weight: 600;
@@ -69,6 +75,71 @@
       text-align: center;
       letter-spacing: 0.02em;
 
+    }
+    span {
+      margin-bottom: 5%;
+    }
+  }
+}
+
+@media (max-width: 1660px) {
+  .countdown__background {
+    padding: 44px 0;
+  }
+  .countdown__timer {
+    width: 53%;
+
+    section p:first-child, span {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.02em;
+
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .countdown__background {
+    padding: 30px 0;
+  }
+  .countdown__item_one {
+    width: 11%;
+  }
+  .countdown__itemPresale {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .countdown {
+    &__item{
+      min-height: 86px;
+
+      &_one {
+        width: 15%;
+      }
+
+
+      &Presale {
+        line-height: 140%;
+      }
+
+      &Button {
+        padding: 22px 54px;
+        font-size: 18px;
+
+      }
+    }
+
+    &__timer {
+      section {
+        width: 60px;
+      }
+      section p:first-child, span {
+        font-size: 34px;
+      }
     }
   }
 }

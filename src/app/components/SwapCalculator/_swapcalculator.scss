@@ -27,7 +27,6 @@
   position: relative;
   width: 818px;
   height: 451px;
-  margin-bottom: 189px;
   border-radius: 50px;
   background: #FFFFFF;
   box-shadow: 0 12px 94px -10px rgba(0, 0, 0, 0.06);
@@ -35,5 +34,19 @@
   &__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 40px;
+    margin-bottom: 189px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .calculator {
+    display: flex;
+    justify-self: center;
+    
+    &__wrapper {
+      grid-template-columns: none;
+    }
   }
 }
