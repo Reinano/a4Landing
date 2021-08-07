@@ -1,1 +1,55 @@
-.socialMedia { &__topStripe {position: absolute;width: 100%;height: 161px;background: #30125C;} &__container {border-radius: 60px;background: #CDF55B;position: relative;margin-bottom: 160px !important;padding: 64px 105px 59px 105px;} &__background {display: block;position: absolute;bottom: -24px;right: 0;width: 100%;height: 100%;background: url('./../../../../src/img/socialMediaBackground.png') no-repeat right bottom;background-size: contain;} &__icons {position: relative;display: inline-block;margin-top: 41px;} &__icon {float: left;position: relative;display: inline-block;width: 85px;height: 85px;background-size: contain;margin-right: 48px; &_telegram {background: url('./../../../../src/img/telegram.svg') no-repeat center;} &_instagram {background: url('./../../../../src/img/instagram.svg') no-repeat center;}&_twitter {background: url('./../../../../src/img/twitter.svg') no-repeat center;}}}
+.socialMedia {
+  &__topStripe {
+    position: absolute;
+    width: 100%;
+    height: 161px;
+    background: #30125C;
+  }
+
+  &__container {
+    border-radius: 60px;
+    background: #CDF55B;
+    position: relative;
+    margin-bottom: 160px !important;
+    padding: 64px 105px 59px 105px;
+  }
+
+  &__background {
+    display: block;
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./../../../../src/img/socialMediaBackground.png') no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &__icons {
+    position: relative;
+    display: inline-block;
+    margin-top: 41px;
+  }
+
+  &__icon {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    background-size: contain;
+    margin-right: 48px;
+
+    &_telegram {
+      background: url('./../../../../src/img/telegram.svg') no-repeat center;
+    }
+
+    &_instagram {
+      background: url('./../../../../src/img/instagram.svg') no-repeat center;
+    }
+
+    &_twitter {
+      background: url('./../../../../src/img/twitter.svg') no-repeat center;
+    }
+  }
+}
