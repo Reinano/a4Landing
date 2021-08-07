@@ -1,0 +1,234 @@
+.emission{
+  margin-bottom: 178px;
+  height: 768px;
+
+  &__innerWrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    display: flex;
+    flex-direction: column;
+    color: #30125C;
+  }
+  &__title {
+    position: relative;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 130%;
+    margin-bottom: 60px;
+
+    &_icon {
+      position: absolute;
+      left: 103%;
+      top: 0;
+      height: 64%;
+      width: 15%;
+      background: url('./../../../../src/img/a4logo.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__desc {
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    &_a4tokens {
+      opacity: 0.7;
+    }
+  }
+
+  &__background{
+    &_circle{
+      display: block;
+      position: absolute;
+      left: -20%;
+      top: 18%;
+      bottom: 9%;
+      width: 73%;
+      height: 110%;
+      background: url('./../../../../src/img/huge_bg_circle.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__graphContainer{
+    width: 852px;
+    height: 768px;
+    margin-bottom: 178px;
+  }
+  &__circleGraph{
+    display: block;
+    position: relative;
+    width: 637px;
+    height: 639px;
+    bottom: 0;
+    margin-left: 208px;
+    background: url('./../../../../src/img/graph_0.png') no-repeat center;
+    background-size: contain;
+    z-index: 0;
+    transition: 200ms;
+    &:hover{
+      transition: 200ms;
+    }
+  }
+
+  &__badge{
+    display: block;
+    position: absolute;
+    z-index: 20;
+    &_1{
+      right: 0;
+      top: 0;
+      &:hover ~ .emission__circleGraph{
+      background: url('./../../../../src/img/graph_1.png') no-repeat center;
+      }
+    }
+    &_2{
+      left: 90px;
+      top: 0;
+      &:hover ~ .emission__circleGraph{
+      background: url('./../../../../src/img/graph_2.png') no-repeat center;
+      }
+    }
+    &_3{
+      left: 0;
+      top: 234px;
+      &:hover ~ .emission__circleGraph{
+        background: url('./../../../../src/img/graph_3.png') no-repeat center;
+      }
+    }
+    &_4{
+      left: 59px;
+      top: 500px;
+      &:hover ~ .emission__circleGraph{
+        background: url('./../../../../src/img/graph_4.png') no-repeat center;
+      }
+    }
+    &_5{
+      left: 383px;
+      bottom: 42px;
+      &:hover ~ .emission__circleGraph{
+        background: url('./../../../../src/img/graph_5.png') no-repeat center;
+      }
+    }
+    &_6{
+      right: 32px;
+      bottom: 0;
+      &:hover ~ .emission__circleGraph{
+        background: url('./../../../../src/img/graph_6.png') no-repeat center;
+      }
+    }
+
+  }
+  &__badgeTitle{
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+    margin-bottom: 9px;
+  }
+  &__badgeSpan{
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    width: 150px;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000;
+    &_1{
+      color: #8532FD;
+    }
+    &_2{
+      color: #EE58FF;
+    }
+    &_3{
+      color: #FD32B8;
+    }
+    &_4{
+      color: #22BCDE;
+    }
+    &_5{
+      color: #55E38E;
+    }
+    &_6{
+      color: #A5C34C;
+    }
+  }
+}
+//common adaptive
+@media (max-width: 1660px){
+  .emission__graphContainer {
+    width: 722px;
+    height: 678px;
+  }
+  .emission__circleGraph {
+    width: 75%;
+    height: 83%;
+    margin-left: 188px;
+  }
+  .emission__badge_1 {
+    right: 0;
+    top: 0;
+  }
+  .emission__badge_2{
+    top: 0;
+    left: 11%;
+  }
+  .emission__badge_3{
+    left: 0;
+    top: 31%;
+  }
+  .emission__badge_4{
+    top: 65%;
+    left: 14%;
+  }
+  .emission__badge_5{
+    left: 45%;
+    bottom: 6%;
+  }
+  .emission__badge_6{
+    right: 3.7%;
+    bottom: 0;
+  }
+  .emission__title {
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1440px){
+  .emission__title {
+    font-size: 48px;
+    margin-bottom: 25px;
+
+    &_icon {
+      left: 95%;
+    }
+  }
+  .emission__graphContainer {
+    width: 622px;
+    height: 588px;
+  }
+  .emission__circleGraph {
+    margin-left: 162px;
+  }
+}
+
+// adaptive for tablets
+@media (max-width: 1366px){
+  .emission__graphContainer {
+    width: 582px;
+    height: 553px;
+  }
+  .emission__circleGraph {
+    margin-left: 151px;
+  }
+}
