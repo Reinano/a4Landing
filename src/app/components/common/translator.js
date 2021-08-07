@@ -1,5 +1,6 @@
 import React from "react";
 import {useLanguage} from "./useLang";
+import {Typograph} from "./Typograph";
 
 export const useTranslation = (text) => {
 
@@ -244,5 +245,19 @@ export const useTranslation = (text) => {
 }
 
 export const _t = (text) => {
-    return useTranslation(text);
+    const textForMarkup = useTranslation(text);
+
+    function createMarkup(textForMarkup) {
+        if (textForMarkup) {
+            const outerMarkup = Typograph(textForMarkup);
+            return {__html:outerMarkup};
+        }
+
+    }
+
+    return(
+        <>
+            <div dangerouslySetInnerHTML={createMarkup(textForMarkup)}/>
+        </>
+    )
 }

@@ -29,7 +29,7 @@
     width: 217px;
     height: 70px;
     background: url('./../../../../src/img/GooglePlayImage.svg') no-repeat center;
-    background-size: contain;
+    background-size: 98%;
   }
   &__appStore{
     float: left;
@@ -39,7 +39,7 @@
     height: 70px;
     margin-right: 54px;
     background: url('./../../../../src/img/AppStoreImage.svg') no-repeat center;
-    background-size: contain;
+    background-size: 98%;
   }
   &__scrollToTop{
     float: right;
