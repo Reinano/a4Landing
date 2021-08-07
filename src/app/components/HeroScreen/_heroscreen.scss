@@ -121,3 +121,21 @@
     font-size: 40px;
   }
 }
+@media (max-width: 1024px) {
+  .heroscreen__header{
+    font-size: 34px;
+  }
+  .heroscreenStore {
+    max-width: 300px;
+  }
+  .heroscreenStore__appStore {
+    width: 140px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .heroscreenStore__googlePlay {
+    width: 140px;
+    height: 50px;
+    margin-right: 10px;
+  }
+}

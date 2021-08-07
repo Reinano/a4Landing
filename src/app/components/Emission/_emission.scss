@@ -88,6 +88,7 @@
       top: 0;
       &:hover ~ .emission__circleGraph{
       background: url('./../../../../src/img/graph_1.png') no-repeat center;
+      background-size: contain;
       }
     }
     &_2{
@@ -95,6 +96,7 @@
       top: 0;
       &:hover ~ .emission__circleGraph{
       background: url('./../../../../src/img/graph_2.png') no-repeat center;
+      background-size: contain;
       }
     }
     &_3{
@@ -102,6 +104,8 @@
       top: 234px;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_3.png') no-repeat center;
+        background-size: contain;
+
       }
     }
     &_4{
@@ -109,6 +113,8 @@
       top: 500px;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_4.png') no-repeat center;
+        background-size: contain;
+
       }
     }
     &_5{
@@ -116,6 +122,8 @@
       bottom: 42px;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_5.png') no-repeat center;
+        background-size: contain;
+
       }
     }
     &_6{
@@ -123,6 +131,8 @@
       bottom: 0;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_6.png') no-repeat center;
+        background-size: contain;
+
       }
     }
 
@@ -230,5 +240,71 @@
   }
   .emission__circleGraph {
     margin-left: 151px;
+  }
+}
+@media (max-width: 1200px) {
+  .emission__graphContainer {
+    width: 504px;
+    height: 481px;
+  }
+  .emission__circleGraph{
+    margin-left: 131px;
+  }
+  .emission__badgeTitle {
+    font-size: 25px;
+  }
+  .emission__badgeSpan {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .emission__innerWrapper {
+    margin-bottom: 100px;
+  }
+  .emission__graphContainer {
+    width: 430px;
+    height: 410px;
+    margin-bottom: 0;
+  }
+  .emission__circleGraph{
+    margin-left: 120px;
+  }
+  .emission__badgeTitle {
+    font-size: 21px;
+    margin-bottom: 0px;
+  }
+  .emission__badgeSpan {
+    font-size: 16px;
+  }
+  .emission__badge_1 {
+    right: -20%;
+  }
+  .emission__badge_3{
+    top: 35%;
+  }
+  .emission__badge_4{
+    left: 18%;
+  }
+  .emission__badge_5{
+    left: 55%;
+  }
+  .emission__badge_6{
+    right: -15.5%;
+    bottom: 6%;
+  }
+  .emission__info {
+    right: 0;
+    grid-gap: 10px;
+  }
+  .emission__title {
+    font-size: 34px;
+    margin-bottom: 0px;
+
+    &_icon {
+      left: 74%;
+    }
+  }
+  .emission__desc {
+    margin-bottom: 0;
   }
 }

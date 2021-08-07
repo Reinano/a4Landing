@@ -110,7 +110,6 @@
     height: 87px;
     margin-bottom: 113px;
     font-weight: normal;
-    font-size: 21px;
     line-height: 140%;
     letter-spacing: 0.02em;
     opacity: 0.7;
@@ -273,6 +272,59 @@
           background: #ffffff;
           border-radius: 2px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    &__background {
+      &_imgOne {
+        right: 2%;
+      }
+      &_common {
+        width: 217px;
+        height: 81px;
+        div{
+          height: 44px;
+          width: 44px;
+          img{
+            width: 20px;
+            height: 13px;
+          }
+        }
+        p{
+          width: 130px;
+          height: 36px;
+          font-size: 13px;
+        }
+      }
+      &_ball {
+        width: 66px;
+        height: 66px;
+      }
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__items {
+      margin-bottom: 50px;
+      grid-gap: 25px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+    &__links {
+      .about__link {
+        font-size: 16px;
+        img {
+          width: 14px;
+        }
+      }
+      p {
+        font-size: 13px;
       }
     }
   }

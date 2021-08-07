@@ -143,3 +143,36 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .countdown {
+    &__background {
+      padding-bottom: 56px;
+    }
+
+    &Container {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 10%;
+    }
+    &__timer {
+      width: 72%;
+    }
+    &__item {
+      &_one {
+        width: 18%;
+        min-height: 40px;
+      }
+      &Presale {
+        font-size: 16px;
+      }
+      &_three{
+        position: absolute;
+        top: 113%;
+        z-index: 2;
+      }
+    }
+
+  }
+}

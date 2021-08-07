@@ -111,6 +111,17 @@ p {
     font-size: 16px;
   }
 }
+@media (max-width: 1024px) {
+  h2{
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .common__number {
+    font-size: 13px;
+  }
+}
 //   ---     ADD COMPONENTS STYLES HERE   ---   //
 
 @import '../Navbar/navbar.scss';

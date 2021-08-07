@@ -14,7 +14,7 @@ const HeroScreen = () => {
             {_t('hero-screen-heading', lang)}<span className='heroscreen__header_span'>A4 Tokens</span>
           </h1>
           <div className="heroscreen__description">
-            {_t('hero-screen-small-text', lang)}
+            <p>{_t('hero-screen-small-text', lang)}</p>
           </div>
           <div className="heroscreenStore">
             <div className="heroscreenStore__appStore"> </div>
