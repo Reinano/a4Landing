@@ -1,33 +1,37 @@
 import React from 'react';
+import {_t} from "../common/translator";
 
 const SocialMedia = () => {
 
   return (
       <>
           <div className='socialMedia__topStripe'> </div>
-          <div className='container socialMedia__container'>
+          <section className="socialMedia">
+            <div className="container">
+              <section className='socialMedia__container' name='social'>
 
-              <span className='common__number'>
-                  07
-              </span>
-              <h2 className='common__h2'>
-                  Social networks
-              </h2>
+                  <span className='common__number'>
+                      07
+                  </span>
+                  <h2 className='common__h2'>
+                      {_t('social-title')}
+                  </h2>
 
-              <p className='common__par'>
-                  <span className='common__par common__par_bold'>Follow the news and development of&nbsp;the project,</span><br/>
-                  as&nbsp;well as&nbsp;participate in&nbsp;the life of&nbsp;the community<br/>
-                  on&nbsp;our social networks
-              </p>
+                  <p className='common__par'>
+                      <span className='common__par common__par_bold'>{_t('social-par-bold')}</span><br/>
+                      {_t('social-par-fade')}
+                  </p>
 
-              <div className='socialMedia__icons'>
-                  <div className='socialMedia__icon socialMedia__icon_telegram'> </div>
-                  <div className='socialMedia__icon socialMedia__icon_instagram'> </div>
-                  <div className='socialMedia__icon socialMedia__icon_twitter'> </div>
-              </div>
+                  <div className='socialMedia__icons'>
+                      <div className='socialMedia__icon socialMedia__icon_telegram'> </div>
+                      <div className='socialMedia__icon socialMedia__icon_instagram'> </div>
+                      <div className='socialMedia__icon socialMedia__icon_twitter'> </div>
+                  </div>
 
-              <div className='socialMedia__background'> </div>
-          </div>
+                  <div className='socialMedia__background'> </div>
+              </section>
+            </div>
+          </section>
       </>
 
   );

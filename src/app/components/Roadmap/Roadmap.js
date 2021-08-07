@@ -4,7 +4,7 @@ const Roadmap = () => {
 
   return (
       <>
-          <div className='common__background_purple'>
+          <section className='common__background_purple' name='roadmap'>
               <div className='container'>
                     <span className='common__number common__number_green'>
                         06
@@ -17,7 +17,7 @@ const Roadmap = () => {
                       <div className="roadmap__phaseContainer">
                           <div className="roadmap__phaseIcon roadmap__phaseIcon_1"> </div>
                           <h3 className='roadmap__phaseTitle'>Phase 1</h3>
-                          <span className='roadmap__phaseSubtitle'>May — June 2021</span>
+                          <span className='roadmap__phaseSubtitle'>August — October 2021</span>
                       </div>
                       <ul className='roadmap__phaseList'>
                           <li className="roadmap__phaseItem">
@@ -146,7 +146,7 @@ const Roadmap = () => {
                   </div>
 
               </div>
-          </div>
+          </section>
       </>
 
   );
