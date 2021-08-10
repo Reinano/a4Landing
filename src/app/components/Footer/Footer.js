@@ -9,13 +9,14 @@ const Footer = () => {
       <footer className="footer">
        <div className='container'>
           <div className='footerInner'>
-              <div className='footer__column'>
+              <div className='footer__column footer__column_first'>
                   <div className='footer__logo footer__logo_purple'> </div>
                   <div className='footer__description'>
                       <span className='footer__description_bold'>Binance Smart Chain</span><br/>
                       Leveraged Farming Made Easy With A4 Tokens.
                   </div>
               </div>
+              <Link className='footer__mobileScrollToTop' onClick={scrollToTop()}> </Link>
               <div className='footer__column footer__column_second'>
                  <ul className='footer__navigationList'>
                     <li>
@@ -35,7 +36,7 @@ const Footer = () => {
                    </li>
                  </ul>
               </div>
-              <div className='footer__column'>
+              <div className='footer__column footer__column_third'>
                   <div className='footer__row'>
                       <div className="footer__downloadLinks">
                           <div className='footer__appStore'> </div>
@@ -47,6 +48,9 @@ const Footer = () => {
                       {_t('footer-license')}
                   </p>
               </div>
+              <p className='footer__legalInformationForMobileScreen'>
+                  {_t('footer-license')}
+              </p>
           </div>
         </div>
       </footer>

@@ -60,7 +60,7 @@ const CountDown = () => {
                 <smal>{_t('days')}</smal>
               </p>
             </section>
-              <span>:</span>
+              <span className="countdown__timer_span">:</span>
             <section className="countdown__timerHours">
               <p>
                 {timerHours}
@@ -69,7 +69,7 @@ const CountDown = () => {
                 <smal>{_t('hours')}</smal>
               </p>
             </section>
-              <span>:</span>
+              <span className="countdown__timer_span">:</span>
             <section className="countdown__timerMinutes">
               <p>
                 {timerMinutes}
@@ -78,7 +78,7 @@ const CountDown = () => {
                 <smal>{_t('minutes')}</smal>
               </p>
             </section>
-              <span>:</span>
+              <span className="countdown__timer_span">:</span>
             <section className="countdown__timerSeconds">
               <p>
                 {timerSeconds}

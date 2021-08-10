@@ -1,5 +1,5 @@
 .countdown {
-
+  overflow: hidden;
   &__background {
     padding: 58px 0;
     background: #CDF55B;
@@ -34,7 +34,11 @@
     }
 
     &Button {
-      padding: 25px 53px;
+      display: flex;
+      width: 259px;
+      height: 80px;
+      align-items: center;
+      justify-content: center;
       border: 0px;
       border-radius: 27px;
 
@@ -68,7 +72,7 @@
     section {
       width: 90px;
     }
-    section p:first-child, span {
+    section p:first-child, .countdown__timer_span {
       font-size: 64px;
       font-weight: 600;
       line-height: 140%;
@@ -76,7 +80,7 @@
       letter-spacing: 0.02em;
 
     }
-    span {
+    .countdown__timer_span {
       margin-bottom: 5%;
     }
   }
@@ -89,7 +93,7 @@
   .countdown__timer {
     width: 53%;
 
-    section p:first-child, span {
+    section p:first-child, .countdown__timer_span {
       font-size: 48px;
       font-weight: 600;
       line-height: 140%;
@@ -127,7 +131,6 @@
       }
 
       &Button {
-        padding: 22px 54px;
         font-size: 18px;
 
       }
@@ -137,9 +140,65 @@
       section {
         width: 60px;
       }
-      section p:first-child, span {
+      section p:first-child, .countdown__timer_span {
         font-size: 34px;
       }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .countdown {
+    &__background {
+      padding-bottom: 56px;
+    }
+
+    &Container {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 10%;
+    }
+    &__timer {
+      width: 72%;
+    }
+    &__item {
+      &_one {
+        width: 18%;
+        min-height: 40px;
+      }
+      &Presale {
+        font-size: 16px;
+      }
+      &_three{
+        position: absolute;
+        top: 113%;
+        z-index: 2;
+      }
+    }
+
+  }
+}
+@media (max-width: 736px) {
+  .countdown {
+    &Container {
+      flex-direction: column;
+      grid-gap: 16px;
+    }
+    &__item {
+      min-height: auto;
+
+      &_one {
+        width: 100%;
+        justify-content: center;
+      }
+      &Presale {
+        font-size: 14px;
+      }
+    }
+    &__timer {
+      width: 100%;
+      justify-content: center;
+      grid-gap: 15px;
     }
   }
 }

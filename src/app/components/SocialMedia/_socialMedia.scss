@@ -1,4 +1,5 @@
 .socialMedia {
+
   &__topStripe {
     position: absolute;
     width: 100%;
@@ -10,35 +11,31 @@
     border-radius: 60px;
     background: #CDF55B;
     position: relative;
-    margin-bottom: 160px !important;
-    padding: 64px 105px 59px 105px;
+    padding: 64px 7.5%;
   }
 
   &__background {
     display: block;
     position: absolute;
-    bottom: -24px;
+    top: 24px;
+    width: 65%;
     right: 0;
-    width: 100%;
     height: 100%;
     background: url('./../../../../src/img/socialMediaBackground.png') no-repeat right bottom;
     background-size: contain;
   }
 
   &__icons {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    grid-gap: 48px;
     margin-top: 41px;
   }
 
   &__icon {
-    float: left;
-    position: relative;
     display: inline-block;
     width: 85px;
     height: 85px;
     background-size: contain;
-    margin-right: 48px;
 
     &_telegram {
       background: url('./../../../../src/img/telegram.svg') no-repeat center;
@@ -50,6 +47,66 @@
 
     &_twitter {
       background: url('./../../../../src/img/twitter.svg') no-repeat center;
+    }
+  }
+}
+@media (max-width: 1660px) {
+  .socialMedia__container {
+    padding: 50px 7.5%;
+    p{
+      max-width: 59%;
+    }
+  }
+  .socialMedia__background {
+    top: 14px;
+  }
+}
+@media (max-width: 1440px) {
+  .socialMedia__container {
+    padding: 42px 7.5%;
+  }
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+  .socialMedia__container {
+    padding: 34px 7.5%;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .socialMedia__icons {
+    margin-bottom: 30px;
+  }
+  .socialMedia__icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+  }
+}
+@media (max-width: 667px) {
+  .socialMedia {
+    margin-bottom: 150px;
+    &__container {
+      padding: 34px 7.5% 170px;
+      display: flex;
+      flex-direction: column;
+      .common__number {
+        position: absolute;
+        right: 7.5%;
+      }
+      p {
+        max-width: none;
+      }
+    }
+    &__background {
+      top: auto;
+      bottom: -26%;
+      width: 600px;
+      right: -8%;
+      height: 400px;
     }
   }
 }

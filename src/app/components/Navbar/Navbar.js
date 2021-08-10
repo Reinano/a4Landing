@@ -47,6 +47,7 @@ const Navbar = () => {
             </ul>
             <LanguageSwitcher/>
             <div className="navBurgerMenu">
+              <div className="navBurgerMenu__logo"></div>
               <input onClick={showSidebar} className="navBurgerMenu__toogle" id="navBurgerMenu__toogle" type="checkbox"/>
               <label className={sidebar ? "navBurgerMenu__button navBurgerMenu__button_active" : "navBurgerMenu__button"} for="navBurgerMenu__toogle">
                 <span className={sidebar ? "navBurgerMenu__span navBurgerMenu__span_active" : "navBurgerMenu__span"}></span>
@@ -58,7 +59,20 @@ const Navbar = () => {
                 <li className="navBurgerMenu__list"><Link to='tokenomics' smooth={true} className='navBurgerMenu__link'>{_t('nav-tokenomics')}</Link></li>
                 <li className="navBurgerMenu__list"><Link to='roadmap' smooth={true} className='navBurgerMenu__link'>{_t('nav-roadmap')}</Link></li>
                 <li className="navBurgerMenu__list"><Link to='social' smooth={true} className='navBurgerMenu__link'>{_t('nav-social')}</Link></li>
-                <li className="navBurgerMenu__list"><LanguageSwitcher/></li>
+                <div className="navBurgerMenu__socialLinks">
+                <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__socialLink_tg">
+                  <span className="navBurgerMenu__socialLink_tg"></span>
+                </Link>
+                <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__link_instagram">
+                  <span className="navBurgerMenu__socialLink_instagram"></span>
+                </Link>
+                <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__link_twitter">
+                  <span className="navBurgerMenu__socialLink_twitter"></span>
+                </Link>
+                <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__link_toggleLang">
+                  <span className="navBurgerMenu__socialLink_toggleLink"></span>
+                </Link>
+                </div>
               </ul>
             </div>
           </nav>

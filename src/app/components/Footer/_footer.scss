@@ -1,6 +1,8 @@
 .footer{
   width: 100%;
   height: auto;
+  padding: 8% 0;
+  overflow: hidden;
 
   &Inner{
     display: flex;
@@ -8,7 +10,6 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
-    margin-bottom: 150px;
   }
   &__logo{
     display: block;
@@ -50,6 +51,14 @@
     background: url('./../../../../src/img/scrollToTop.svg') no-repeat center;
     background-size: contain;
   }
+  &__mobileScrollToTop {
+    display: none;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: url('./../../../../src/img/scrollToTop.svg') no-repeat center;
+    background-size: contain;
+  }
   &__description{
     width: 315px;
     font-style: normal;
@@ -61,7 +70,6 @@
     &_bold{
       font-style: normal;
       font-weight: bold;
-      font-size: 21px;
       line-height: 140%;
       letter-spacing: 0.02em;
       color: #30125C;
@@ -106,6 +114,16 @@
     color: #30125C;
     opacity: 0.5;
   }
+  &__legalInformationForMobileScreen {
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+    opacity: 0.5;
+  }
 }
 @media (max-width:1660px){
 
@@ -134,5 +152,163 @@
   }
   .footer__googlePlay {
     width: 180px;
+  }
+}
+
+@media (max-width:1200px) {
+  .footer {
+
+    &__logo {
+      margin-bottom: 10px;
+    }
+    &Inner {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr 1fr;
+      grid-template-rows: 75px 30px 80px;
+      grid-row-gap: 15px;
+    }
+    &__column {
+      justify-content: flex-start;
+      &_first {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      &_second {
+
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      &_third {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    }
+    &__navigationList {
+      flex-direction: row;
+    }
+    &__legalInformation {
+      display: none;
+    }
+    &__legalInformationForMobileScreen {
+
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border-top: 1px solid #DAD5E2;
+    }
+  }
+}
+@media (max-width: 868px) {
+  .footer {
+
+    &Inner {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr 1fr;
+      grid-template-rows: 75px 65px 30px 80px;
+      grid-row-gap: 15px;
+    }
+    &__description {
+      max-width: 230px;
+      font-size: 14px;
+    }
+    &__column {
+      &_first {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      &_second {
+        margin-right: 0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      &_third {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    }
+    &__legalInformationForMobileScreen {
+      padding-top: 32px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 4;
+    }
+  }
+}
+@media (max-width: 812px) {
+  .footer {
+    &__navigationList {
+      font-size: 13px;
+    }
+    &__legalInformationForMobileScreen {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 667px) {
+  .footer {
+
+    &__scrollToTop {
+      display: none;
+    }
+    &Inner {
+      grid-template-columns: 3fr auto;
+      grid-template-rows: 75px 30px 50px auto auto;
+    }
+    &__column {
+      &_first {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      &_second {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+      &_third {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    }
+    &__legalInformationForMobileScreen {
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+    &__mobileScrollToTop {
+      display: block;
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+    &__row {
+      height: auto;
+      justify-content: center;
+    }
+    &__appStore {
+      width: 141px;
+      height: 48px;
+    }
+    &__googlePlay {
+      width: 141px;
+      height: 48px;
+    }
   }
 }
