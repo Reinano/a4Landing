@@ -111,6 +111,36 @@ p {
     font-size: 16px;
   }
 }
+@media (max-width: 1024px) {
+  h2{
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .common__number {
+    font-size: 13px;
+    &_green {
+      margin-top: 10%;
+    }
+  }
+
+}
+
+//for mobile screens
+@media (max-width: 812px) {
+  p {
+    font-size: 13px;
+  }
+  .container {
+    width: calc(100% - 17%);
+  }
+  .common__number {
+    margin-bottom: 14px;
+  }
+}
+
+
 //   ---     ADD COMPONENTS STYLES HERE   ---   //
 
 @import '../Navbar/navbar.scss';

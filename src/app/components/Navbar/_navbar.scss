@@ -1,7 +1,7 @@
 .header{
   width: 100%;
   height: auto;
-  padding: 3.7% 0;
+  padding-bottom: 3.7%;
 }
 .nav{
   display: flex;
@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
+  padding-top: 46px;
 
   &__logo{
     display: block;
@@ -70,9 +70,17 @@
 
   &BurgerMenu {
     display: none;
-
     &__toogle {
       opacity: 0;
+    }
+    &__logo {
+      display: none;
+      align-self: baseline;
+      width: 53px;
+      height: 22px;
+      background: url('../../../img/burgera4icon.svg');
+      z-index: 3;
+
     }
 
     &__button {
@@ -89,8 +97,13 @@
       background: #ffffff;
 
       &_active {
+        top: 30px;
+        right: -8.5%;
+        position: absolute;
         z-index: 3;
-        border: 2px solid #ffffff;
+        border: 1.5px solid #CDF55B;
+        box-sizing: border-box;
+        border-radius: 10px;
         background: #30125C;
 
       }
@@ -160,21 +173,22 @@
 
     }
     &__box {
-      display: flex;
+      display: none;
       justify-content: center;
       flex-direction: column;
       position: absolute;
       top: 0;
-      right: 0;
-      
-      width: 250px;
+      right: -100%;
+      width: 375px;
       height: auto;
-      padding: 80px 0;
+      padding: 80px 0 39px;
       transition: 850ms;
       background-color: #30125C;
       visibility: hidden;
       z-index: 1;
       &_active {
+        display: flex;
+        right: -12.5%;
         visibility: visible;
         transition: 350ms;
       }
@@ -182,14 +196,15 @@
 
     &__link {
       display: block;
-      padding: 12px 24px;
-      font-size: 16px;
-      line-height: 24px;
+      padding: 15px 38px;
+      font-style: regular;
+      font-size: 23px;
+      line-height: 32px;
       line-height: 140%;
-      align: left;
-      vertical-align: top;
+      align: Left;
+      vertical-align: Top;
       letter-spacing: 2%;
-      color: #ffffff;
+      color: #FFF;
 
       &:hover {
         background-color: #ffffff;
@@ -227,19 +242,87 @@
         }
       }
     }
+    &__socialLinks {
+      display: flex;
+      grid-gap: 30px;
+      margin-top: 100px;
+      padding: 0 32px;
+    }
+    &__socialLink {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #CDF55B;
+      box-sizing: border-box;
+      border-radius: 13px;
+
+      &_tg {
+        background: url('../../../img/Sendburgertg.svg') no-repeat center;
+      }
+      &_instagram {
+        width: 27px;
+        height: 27px;
+        background: url('../../../img/Shapeburgerinst.svg');
+
+      }
+      &_twitter {
+        width: 27px;
+        height: 23px;
+        background: url('../../../img/Shapeburgertwitter.svg');
+
+      }
+      &_toggleLang {
+        width: 22px;
+        height: 22px;
+        background: url('../../../img/flagicon.svg');
+        border: 1.5px solid #ffffff;
+
+      }
+    }
   }
 
 }
 
 
 @media (max-width: 1024px) {
-  .nav__menu {
-    display: none;
+
+  .nav__logo {
+    width: 80px;
+    height: 30px;
+    position: static;
   }
-  .navBurgerMenu {
-    display: flex;
+  .nav__menu {
+    width: 61%;
+    position: static;
+    grid-gap: 4%;
   }
   .nav__languageItem {
-    display: none;
+    grid-gap: 8px;
+  }
+}
+@media (max-width: 812px) {
+  .header {
+    padding-top: 0;
+  }
+  .nav {
+    padding-top: 46px;
+    &__logo {
+      display: flex;
+      align-self: baseline;
+      width: 59px;
+      height: 22px;
+    }
+    &__menu {
+      display: none;
+    }
+    &__languageItem {
+      display: none;
+    }
+    &BurgerMenu {
+      display: flex;
+      margin-top: -15px;
+    }
   }
 }

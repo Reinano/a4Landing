@@ -36,9 +36,22 @@ const Emission = () => {
                     </div>
 
                     <div className="emission__info">
-                      <p className="emission__desc emission__desc_total">Total Emission:</p>
-                      <h2 className="emission__title">10 Trillions <span className="emission__title_icon"></span></h2>
-                      <p className="emission__desc emission__desc_a4tokens">10 000 000 000 000 A4 Tokens</p>
+                      <p className="emission__desc emission__desc_total">{_t('emission-totalEmission')}:<span className="emission__desc_a4spanOne">A4 {_t('emission-A4-tokens')}</span></p>
+                      <h2 className="emission__title">10 {_t('emission-title')}<span className="emission__title_icon"></span></h2>
+                      <p className="emission__desc emission__desc_a4tokens">10 000 000 000 000 <span className="emission__desc_a4spanTwo">A4 {_t('emission-A4-tokens')}</span></p>
+                    </div>
+
+                    <div className="emission__mobileGraph">
+                      <div className="emission__mobileGraphItem emission__mobileGraphItem_1"></div>
+                      <div className="emission__mobileGraphItem emission__mobileGraphItem_2"></div>
+                      <div className="emission__mobileGraphItem emission__mobileGraphItem_3"></div>
+                      <div className="emission__mobileGraphItem emission__mobileGraphItem_4"></div>
+                      <div className="emission__mobileGraphItem emission__mobileGraphItem_5"></div>
+                      <div className="emission__mobileGraphItem emission__mobileGraphItem_6"></div>
+                    </div>
+                    <div className="emissionMobile">
+                      <span className="common__number">4</span>
+                      <h2 className="emissionMobile__title">{_t('emissionMobile-title')}</h2>
                     </div>
                   </div>
                 </div>

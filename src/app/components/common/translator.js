@@ -45,17 +45,17 @@ export const useTranslation = (text) => {
         case 'remind-me': {
             return isEng ?
                 'Remind me' :
-                'Напомнить о старте';
+                'Напомнить';
         }
         case 'about-title-dark': {
             return isEng ?
-                'A4 is a lending protocol that allows you to increase your profitability ' :
+                'A4 is a lending </br> protocol that allows you to increase your profitability ' :
                 'A4 — протокол кредитования, который позволяет увеличивать вашу доходность ';
         }
         case 'about-title-fade': {
             return isEng ?
-                'by leveraging funds on the Binance Smart Chain.' :
-                'с использованием заемных средств на Binance Smart Chain.';
+                ' by leveraging funds on the Binance Smart Chain.' :
+                ' с использованием заемных средств на Binance Smart Chain.';
         }
         case 'about-item-1-1': {
             return isEng ?
@@ -75,12 +75,12 @@ export const useTranslation = (text) => {
         case 'about-item-2-1': {
             return isEng ?
                 'Borrowers, in turn, ' :
-                'Заемщики, в свою очередь, могут получить кредиты для повышения эффективности своей деятельности.';
+                'Заемщики, в свою очередь, ';
         }
         case 'about-item-2-2': {
             return isEng ?
                 'can obtain loans ' :
-                'могут получить кредиты';
+                'могут получить кредиты ';
         }
         case 'about-item-2-3': {
             return isEng ?
@@ -141,6 +141,26 @@ export const useTranslation = (text) => {
             return isEng ?
                 'Liquidity pools' :
                 'Пулы ликвидности';
+        }
+        case 'emission-title': {
+            return isEng ?
+                'Trillions ' :
+                'Триллионы ';
+        }
+        case 'emissionMobile-title': {
+            return isEng ?
+                'Vocabulary ' :
+                'Токеномика ';
+        }
+        case 'emission-totalEmission': {
+            return isEng ?
+                'Total Emission ' :
+                'Общий выпуск ';
+        }
+        case 'emission-A4-tokens': {
+            return isEng ?
+                'Tokens ' :
+                'Токены ';
         }
         case 'emission-item-1': {
             return isEng ?
@@ -257,7 +277,7 @@ export const _t = (text) => {
 
     return(
         <>
-            <div dangerouslySetInnerHTML={createMarkup(textForMarkup)}/>
+            <span dangerouslySetInnerHTML={createMarkup(textForMarkup)}/>
         </>
     )
 }

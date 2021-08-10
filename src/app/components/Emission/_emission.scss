@@ -42,9 +42,13 @@
     &_a4tokens {
       opacity: 0.7;
     }
+    &_a4spanOne {
+      display: none;
+    }
   }
 
   &__background{
+    overflow: hidden;
     &_circle{
       display: block;
       position: absolute;
@@ -79,6 +83,10 @@
     }
   }
 
+  &__mobileGraph {
+    display: none;
+  }
+
   &__badge{
     display: block;
     position: absolute;
@@ -88,6 +96,7 @@
       top: 0;
       &:hover ~ .emission__circleGraph{
       background: url('./../../../../src/img/graph_1.png') no-repeat center;
+      background-size: contain;
       }
     }
     &_2{
@@ -95,6 +104,8 @@
       top: 0;
       &:hover ~ .emission__circleGraph{
       background: url('./../../../../src/img/graph_2.png') no-repeat center;
+      background-size: contain;
+
       }
     }
     &_3{
@@ -102,6 +113,8 @@
       top: 234px;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_3.png') no-repeat center;
+        background-size: contain;
+
       }
     }
     &_4{
@@ -109,6 +122,8 @@
       top: 500px;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_4.png') no-repeat center;
+        background-size: contain;
+
       }
     }
     &_5{
@@ -116,6 +131,8 @@
       bottom: 42px;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_5.png') no-repeat center;
+        background-size: contain;
+
       }
     }
     &_6{
@@ -123,6 +140,8 @@
       bottom: 0;
       &:hover ~ .emission__circleGraph{
         background: url('./../../../../src/img/graph_6.png') no-repeat center;
+        background-size: contain;
+
       }
     }
 
@@ -162,6 +181,9 @@
     &_6{
       color: #A5C34C;
     }
+  }
+  &Mobile {
+    display: none;
   }
 }
 //common adaptive
@@ -230,5 +252,181 @@
   }
   .emission__circleGraph {
     margin-left: 151px;
+  }
+}
+@media (max-width: 1200px) {
+  .emission__graphContainer {
+    width: 504px;
+    height: 481px;
+  }
+  .emission__circleGraph{
+    margin-left: 131px;
+  }
+  .emission__badgeTitle {
+    font-size: 25px;
+  }
+  .emission__badgeSpan {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .emission__innerWrapper {
+    margin-bottom: 100px;
+  }
+  .emission__graphContainer {
+    width: 430px;
+    height: 410px;
+    margin-bottom: 0;
+  }
+  .emission__circleGraph{
+    margin-left: 120px;
+  }
+  .emission__badgeTitle {
+    font-size: 21px;
+    margin-bottom: 0px;
+  }
+  .emission__badgeSpan {
+    font-size: 16px;
+  }
+  .emission__badge_1 {
+    right: -20%;
+  }
+  .emission__badge_3{
+    top: 35%;
+  }
+  .emission__badge_4{
+    left: 18%;
+  }
+  .emission__badge_5{
+    left: 55%;
+  }
+  .emission__badge_6{
+    right: -15.5%;
+    bottom: 6%;
+  }
+  .emission__info {
+    right: 0;
+    grid-gap: 10px;
+  }
+  .emission__title {
+    font-size: 34px;
+    margin-bottom: 0px;
+
+    &_icon {
+      left: 74%;
+    }
+  }
+  .emission__desc {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 868px) {
+  .emission {
+    &__circleGraph {
+      margin-left: 90px;
+    }
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: 812px) {
+  .emission {
+    &__background {
+      &_circle {
+        display: none;
+      }
+
+    }
+    &__innerWrapper {
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+    &Mobile {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &Mobile__title {
+      font-weight: 600;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #30125C;
+    }
+    &__mobileGraph {
+      display: flex;
+      grid-gap: 2px;
+      width: 100%;
+      margin-bottom: 32px;
+      &Item {
+        height: 70px;
+        &_1{
+          width: 50%;
+          background: #8532FD;
+        }
+        &_2 {
+          width: 17.5%;
+          background: #DE58FF;
+        }
+        &_3 {
+          width: 11.25%;
+          background: #FF5CD2;
+        }
+        &_4{
+          width: 10%;
+          background: #64EDCF;
+        }
+        &_5 {
+          width: 8.75%;
+          background: #53E1EA;
+        }
+        &_6 {
+          width: 2.5%;
+          background: #D1F370;
+        }
+      }
+    }
+    &__graphContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 120px 120px;
+      width: auto;
+      height: auto;
+    }
+    &__badge {
+      position: static;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-top: 1px solid #DAD5E2;
+      &Span {
+        font-size: 13px;
+      }
+    }
+    &__info {
+      position: static;
+      flex-direction: column;
+    }
+    &__title {
+      display: none;
+    }
+    &__desc {
+      &_a4tokens {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 140%;
+        letter-spacing: 0.002em;
+      }
+      &_total {
+        display: flex;
+      }
+      &_a4spanTwo {
+        display: none;
+      }
+      &_a4spanOne {
+        display: block;
+        margin-left: 0.5%;
+      }
+    }
   }
 }
