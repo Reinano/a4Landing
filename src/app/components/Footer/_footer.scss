@@ -159,7 +159,7 @@
   .footer {
 
     &__logo {
-      margin-bottom: 10px;
+      margin-bottom: 26px;
     }
     &Inner {
       display: grid;
@@ -300,7 +300,7 @@
     }
     &__row {
       height: auto;
-      justify-content: center;
+      justify-content: flex-start;
     }
     &__appStore {
       width: 141px;
@@ -309,6 +309,44 @@
     &__googlePlay {
       width: 141px;
       height: 48px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    &Inner {
+      grid-template-columns: 85% 15%;
+    }
+    &__logo {
+      width: 53px;
+      height: 22px;
+    }
+    &__mobileScrollToTop {
+      width: 48px;
+      height: 48px;
+      justify-self: flex-end;
+    }
+    &__row {
+      justify-content: flex-start;
+    }
+    &__downloadLinks {
+      display: flex;
+      grid-gap: 5%;
+      width: 100%;
+    }
+    &__appStore {
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .footer {
+    &__navigationList {
+      display: grid;
+      grid-template-columns: 141px 141px;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-content: normal;
     }
   }
 }

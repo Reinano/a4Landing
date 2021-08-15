@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
 
   return (
       <div className="nav__languageItem" onClick={toggleLang}>
-        <img src={flagicon} alt="flagicon"/>
+        <img className={lang ? 'nav__languageItem_img' : 'nav__languageItem_imgNone'} src={flagicon} alt="flagicon"/>
         <button className="nav__languageItemBtn nav__languageItemBtn_bg">
           <div className="nav__languageItemBtn_text">{lang ? 'Russian' : 'English'}</div>
         </button>
@@ -23,16 +23,17 @@ const LanguageSwitcher = () => {
 }
 
 const Navbar = () => {
+
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
 
-    const { lang } = React.useContext(LanguageContext);
+    const { lang, toggleLang } = React.useContext(LanguageContext);
   return (
     <>
       <header className='header'>
         <div className="container" name="top">
-          <nav className='nav'>
+          <nav className={sidebar ? "nav nav__sidebar" : "nav"}>
             <div className="nav__logo nav__logo_purple">
               <Link to='top' smooth={true} className='nav__logo-link'> </Link>
             </div>
@@ -47,7 +48,7 @@ const Navbar = () => {
             </ul>
             <LanguageSwitcher/>
             <div className="navBurgerMenu">
-              <div className="navBurgerMenu__logo"></div>
+              <div className={sidebar ? "navBurgerMenu__logo navBurgerMenu__logo_active" : "navBurgerMenu__logo"}></div>
               <input onClick={showSidebar} className="navBurgerMenu__toogle" id="navBurgerMenu__toogle" type="checkbox"/>
               <label className={sidebar ? "navBurgerMenu__button navBurgerMenu__button_active" : "navBurgerMenu__button"} for="navBurgerMenu__toogle">
                 <span className={sidebar ? "navBurgerMenu__span navBurgerMenu__span_active" : "navBurgerMenu__span"}></span>
@@ -69,8 +70,8 @@ const Navbar = () => {
                 <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__link_twitter">
                   <span className="navBurgerMenu__socialLink_twitter"></span>
                 </Link>
-                <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__link_toggleLang">
-                  <span className="navBurgerMenu__socialLink_toggleLink"></span>
+                <Link to='#' smooth={true} className="navBurgerMenu__socialLink navBurgerMenu__link_toggleLang" onClick={toggleLang}>
+                  <span className={lang ? "navBurgerMenu__socialLink_langRu" : "navBurgerMenu__socialLink_langEn"}>{lang ? "" : "En"}</span>
                 </Link>
                 </div>
               </ul>

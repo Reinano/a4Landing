@@ -12,9 +12,11 @@
 
     color: #30125C;
 
-    &_span {
-      margin-left: 1%;
-      color: #CDF55B;
+    span {
+      &:nth-child(2n){
+
+        color: #CDF55B;
+      }
     }
   }
 
@@ -144,7 +146,7 @@
 @media (max-width: 667px) {
   .heroscreen {
     &__header {
-      width: 90%;
+      width: 80%;
       max-width: max-content;
       order: 1;
     }
@@ -160,11 +162,50 @@
     }
     &__background_img {
       display: flex;
-      height: 274px;
-      width: 216px;
+      height: 315px;
+      width: 311px;
+      background:url('../../../img/heroscreenmobileimg.png') no-repeat;
       background-size: cover;
       order: 3;
       position: static;
     }
+  }
+}
+@media (max-width: 428px) {
+  .heroscreen {
+    &__header {
+      width: 95%;
+    }
+    &__description {
+      width: 95%;
+    }
+  }
+}
+@media (max-width: 414px) {
+  .heroscreen {
+    &__header {
+      width: 100%;
+    }
+    &__description {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .heroscreen {
+    &__header {
+      width: 105%;
+    }
+  }
+}
+@media (max-width: 375px){
+  .heroscreen__header {
+      width: 107%;
+  }
+}
+@media (max-width: 374px) {
+  .heroscreen__header {
+    width: 100%;
+    font-size: 32px;
   }
 }

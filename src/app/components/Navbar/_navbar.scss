@@ -11,6 +11,7 @@
   position: relative;
   padding-top: 46px;
 
+
   &__logo{
     display: block;
     position: relative;
@@ -65,6 +66,9 @@
       letter-spacing: 0.02em;
       color: #30125C;
       border: 0;
+    }
+    &_imgNone {
+      display: none;
     }
   }
 
@@ -273,19 +277,31 @@
         background: url('../../../img/Shapeburgertwitter.svg');
 
       }
-      &_toggleLang {
+      &_langRu {
         width: 22px;
         height: 22px;
-        background: url('../../../img/flagicon.svg');
-        border: 1.5px solid #ffffff;
-
+        background: url('../../../img/burgermenuiconrus.svg');
+      }
+      &_langEn {
+        width: 28px;
+        height: 33px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
       }
     }
   }
 
 }
 
-
+@media (max-width: 1200px) {
+  .nav__menu {
+    grid-gap: 6%;
+  }
+}
 @media (max-width: 1024px) {
 
   .nav__logo {
@@ -323,6 +339,26 @@
     &BurgerMenu {
       display: flex;
       margin-top: -15px;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .nav__sidebar {
+    height: 100vh;
+  }
+  .navBurgerMenu {
+    &__logo_active {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 46px;
+    }
+    &__button_active {
+      right: 0;
+    }
+    &__box {
+      width: 125%;
+      padding-top: 178px;
     }
   }
 }

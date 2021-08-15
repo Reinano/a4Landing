@@ -12,6 +12,13 @@
     background: #CDF55B;
     position: relative;
     padding: 64px 7.5%;
+    p {
+      span {
+        &:first-child {
+          font-weight: bold;
+        }
+      }
+    }
   }
 
   &__background {
@@ -88,7 +95,8 @@
 }
 @media (max-width: 667px) {
   .socialMedia {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
+    overflow: hidden;
     &__container {
       padding: 34px 7.5% 170px;
       display: flex;
@@ -107,6 +115,67 @@
       width: 600px;
       right: -8%;
       height: 400px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .socialMedia {
+    &__background {
+      width: 150%;
+      right: -12%;
+      top: 40%;
+    }
+    &__container {
+      padding: 34px 35px 178px;
+      h2 {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+    &__icons {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .socialMedia {
+    &__background {
+      top: 32%;
+    }
+    p {
+      max-width: 85%;
+    }
+  }
+}
+@media (max-width: 414px) {
+  .socialMedia {
+    &__background {
+      top: 34%;
+    }
+    p {
+      max-width: 90%;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .socialMedia {
+    p {
+      max-width: 99%;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .socialMedia {
+    &__container {
+      padding-bottom: 120px;
+    }
+    &__background {
+      top: 22%;
     }
   }
 }

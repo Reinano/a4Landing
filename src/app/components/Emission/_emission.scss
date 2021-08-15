@@ -91,6 +91,9 @@
     display: block;
     position: absolute;
     z-index: 20;
+    &_questionicon {
+      display: none;
+    }
     &_1{
       right: 0;
       top: 0;
@@ -428,5 +431,53 @@
         margin-left: 0.5%;
       }
     }
+  }
+}
+@media (max-width: 500px) {
+  .emission {
+    &__innerWrapper {
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__graphContainer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 95px 95px 95px;
+    }
+    &__badge {
+      position: relative;
+      right: auto;
+      left: auto;
+      bottom: auto;
+      top: auto;
+      &Span {
+        max-width: 30%;
+      }
+      &_questionicon {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: auto;
+        bottom: auto;
+        top: 50%;
+        left: 50%;
+        background: url('../../../img/Rectanglequestion.svg');
+      }
+      &_5 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+    }
+  }
+}
+@media (max-width: 428px) {
+  .emission__graphContainer {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 359px) {
+  .emission__desc_a4tokens {
+    font-size: 26px;
   }
 }

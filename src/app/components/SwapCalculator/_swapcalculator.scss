@@ -138,13 +138,12 @@
       &_green {
         width: 800px;
         height: 800px;
-        top: 0;
+        right: -50%;
         left: 320.6px;
         background-position-x: 0;
         background-position-y: 0;
-        transform: rotate(-110.87deg);
         background-size: contain;
-        z-index: 1;
+        z-index: -1;
       }
       &_pink {
         width: 406px;
@@ -154,6 +153,7 @@
         background-size: cover;
         background-position-x: 0;
         background-position-y: 0;
+        z-index: -1;
       }
     }
   }
@@ -181,6 +181,45 @@
       h2 {
         margin-bottom: 0;
       }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .swapCalculator {
+    padding-bottom: 91px;
+    padding-top: 50px;
+    .blurryBubble {
+      &_pink {
+        width: 460px;
+        left: -50%;
+      }
+      &_green {
+        left: auto;
+        top: -18%;
+        background-size: cover;
+      }
+    }
+  }
+  .calculator {
+    &__wrapper {
+      width: 311px;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .swapCalculator {
+    .blurryBubble_green {
+      width: 100%;
+      height: 100%;
+      right: -10%;
+      top: 0;
+    }
+  }
+}
+@media (max-width: 374px) {
+  .swapCalculator {
+    .container {
+      width: 100%;
     }
   }
 }

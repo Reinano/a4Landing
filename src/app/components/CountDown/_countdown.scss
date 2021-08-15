@@ -146,7 +146,7 @@
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .countdown {
     &__background {
       padding-bottom: 56px;
@@ -178,6 +178,28 @@
 
   }
 }
+@media (max-width: 812px) {
+  .countdown {
+    &__item {
+      min-height: 60px;
+      &_three {
+        top: 125%;
+      }
+      &Button {
+        width: 167px;
+        height: 60px;
+        background: #30125C;
+        border-radius: 20px;
+        font-size: 13px;
+        img {
+          width: 13px;
+          height: 14px;
+          margin-right: 9px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 736px) {
   .countdown {
     &Container {
@@ -199,6 +221,31 @@
       width: 100%;
       justify-content: center;
       grid-gap: 15px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .countdown {
+    &__timer {
+      p {
+        &:nth-child(2n) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .countdown {
+    &__timer {
+      grid-gap: 14px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .countdown {
+    &__item {
+      grid-gap: 5px;
     }
   }
 }
