@@ -1,7 +1,5 @@
 import React from 'react';
 import aboutA4icon from '../../../../src/img/aboutA4.svg';
-import transparensyAboutIcon from '../../../../src/img/transparensyAboutIcon.svg';
-import improveAboutIcon from '../../../../src/img/improveAboutIcon.svg';
 import plusspot from '../../../../src/img/plus_spot.svg';
 
 
@@ -12,12 +10,8 @@ const About = () => {
     <section className="about__background relative">
         <div className="about__background_imgOne"></div>
         <div className="about__background_common about__background_imgTwo">
-          <div><img src={transparensyAboutIcon} alt="transparensyAboutIcon"/></div>
-          <p><span>Transparency</span><br/> of the transactions</p>
         </div>
         <div className="about__background_common about__background_imgThree">
-          <div><img src={improveAboutIcon} alt="improveAboutIcon"/></div>
-          <p><span>Improve</span><br/>he efficiency</p>
         </div>
         <div className="about__background_ball">
 
@@ -27,26 +21,20 @@ const About = () => {
             <span className='common__number common__number_pink'>
                 01
             </span>
-            <h2 className="about__title">{_t('about-title-dark')}<span className="about__title_span">{_t('about-title-fade')}</span></h2>
+            <h2 className="about__title">{_t('about-title-dark')}&nbsp;{_t('about-title-fade')}</h2>
             <div className="about__items">
-              <p className="about__item">
-                <div className="about__item_icon">
-
-                </div>
-                {_t('about-item-1-1')}<b>{_t('about-item-1-2')}</b>{_t('about-item-1-3')}
-              </p>
-              <p className="about__item">
-                <div className="about__item_icon">
-
-                </div>
-                {_t('about-item-2-1')}<b>{_t('about-item-2-2')}</b>{_t('about-item-2-3')}
-              </p>
-              <p className="about__item">
-                <div className="about__item_icon">
-
-                </div>
-                {_t('about-item-3-1')}<b>{_t('about-item-3-2')}</b>{_t('about-item-3-3')}
-              </p>
+              <div className="about__item">
+                <div className="about__item_icon"></div>
+                <p>{_t('about-item-1-1')}&nbsp;{_t('about-item-1-2')}&nbsp;{_t('about-item-1-3')}</p>
+              </div>
+              <div className="about__item">
+                <div className="about__item_icon"></div>
+                <p>{_t('about-item-2-1')}&nbsp;{_t('about-item-2-2')}&nbsp;{_t('about-item-2-3')}</p>
+              </div>
+              <div className="about__item">
+                <div className="about__item_icon"></div>
+                <p>{_t('about-item-3-1')}&nbsp;{_t('about-item-3-2')}&nbsp;{_t('about-item-3-3')}</p>
+              </div>
             </div>
 
             <div className="about__links">

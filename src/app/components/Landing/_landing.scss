@@ -8,6 +8,8 @@ h3 {
 }
 p {
   font-size: 21px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
 }
 .container {
   width: 1450px;
@@ -70,7 +72,7 @@ p {
 }
 @media (max-width: 1919px) {
   .container {
-    max-width: calc(100% - 24%);
+    width: calc(100% - 24%);
   }
 }
 @media (max-width: 1660px) {
@@ -86,7 +88,7 @@ p {
 }
 @media (max-width: 1440px) {
   .container {
-    max-width: calc(100% - 20%);
+    width: calc(100% - 20%);
   }
   h2 {
     font-size: 30px;
@@ -134,12 +136,18 @@ p {
   }
   .container {
     width: calc(100% - 17%);
+
   }
   .common__number {
     margin-bottom: 14px;
   }
 }
 
+@media (max-width: 350px) {
+  h2 {
+    font-size: 18px;
+  }
+}
 
 //   ---     ADD COMPONENTS STYLES HERE   ---   //
 

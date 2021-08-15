@@ -18,7 +18,7 @@ const SocialMedia = () => {
                   </h2>
 
                   <p className='common__par'>
-                      <span className='common__par common__par_bold'>{_t('social-par-bold')}</span><br/>
+                      {_t('social-par-bold')}<br/>
                       {_t('social-par-fade')}
                   </p>
 

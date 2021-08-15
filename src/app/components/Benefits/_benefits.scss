@@ -188,3 +188,18 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .benefits {
+    padding-bottom: 180px;
+  }
+}
+@media (max-width: 428px) {
+  .benefits__item_text {
+      max-width: 60%;
+  }
+}
+@media (max-width: 414px) {
+  .benefits__item_text {
+      max-width: 65%;
+  }
+}

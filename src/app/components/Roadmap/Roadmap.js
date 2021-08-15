@@ -24,7 +24,6 @@ const Roadmap = () => {
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
                                   Launch of the token </span>
-                                  on the Binance Smart Chain
                               </p>
                           </li>
                           <li className="roadmap__phaseItem">
@@ -66,8 +65,8 @@ const Roadmap = () => {
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                  Virtual Exhibition, </span>
-                                  World's First NFT Digital Museum
+                                  Virtual, endless, </span>
+                                  first in the world NFT museum-shop (Beta)
                               </p>
                           </li>
                           <li className="roadmap__phaseItem">
@@ -80,21 +79,21 @@ const Roadmap = () => {
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                 AUSD Stablecoin </span>
+                                 Creation of AUSD stable coin </span>
                               </p>
                           </li>
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                  A decentralized </span>
-                                  wallet with internal exchange
+                                  Launch DEX </span>
                               </p>
                           </li>
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                  Social mission
+                                  Launch
                               </span>
+                                of the decentralized financial game "Safe"
                               </p>
                           </li>
                       </ul>
@@ -108,38 +107,22 @@ const Roadmap = () => {
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                  The addition </span>
-                                  of new liquidity pairs/ independent tokens with a reserve of A4
+                                  Infinite liquidity mechanisms </span>
                               </p>
                           </li>
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                  Cryptomats
+                                  Launch KeepPrice system
                               </span>
                               </p>
                           </li>
                           <li className="roadmap__phaseItem">
                               <p className="roadmap__phaseItemText">
                               <span className="roadmap__phaseItemText_bold">
-                                 CEX/DEX Exchange
+                                 Launch virtual, endless
                               </span>
-                              </p>
-                          </li>
-                      </ul>
-
-                      <div className="roadmap__phaseContainer">
-                          <div className="roadmap__phaseIcon roadmap__phaseIcon_4"> </div>
-                          <h3 className='roadmap__phaseTitle'>Phase 4</h3>
-                          <span className='roadmap__phaseSubtitle roadmap__phaseSubtitle_yellow'>January — March 2022</span>
-                      </div>
-                      <ul className='roadmap__phaseList'>
-                          <li className="roadmap__phaseItem">
-                              <p className="roadmap__phaseItemText">
-                              <span className="roadmap__phaseItemText_bold">
-                                  AUSD
-                              </span>
-                                  with A4 deposits
+                                NFT museum-shop for all the world
                               </p>
                           </li>
                       </ul>

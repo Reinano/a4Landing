@@ -12,6 +12,11 @@ export const useTranslation = (text) => {
                 'Binance Smart Chain Leveraged Farming Made Easy With ' :
                 'Фермерство на Binance Smart Chain с использованием заемных средств стало проще с помощью ';
         }
+        case 'hero-screen-heading-green': {
+            return isEng ?
+                'A4 Tokens ' :
+                'A4 Токены ';
+        }
         case 'hero-screen-small-text': {
             return isEng ?
                 'Increase Your Assets In Both Bull And Bear Markets. And also get strong leverage without the risk of losing capital.' :
@@ -54,17 +59,17 @@ export const useTranslation = (text) => {
         }
         case 'about-title-fade': {
             return isEng ?
-                ' by leveraging funds on the Binance Smart Chain.' :
-                ' с использованием заемных средств на Binance Smart Chain.';
+                '<br> by leveraging funds on the Binance Smart Chain.' :
+                'с использованием заемных средств на Binance Smart Chain.';
         }
         case 'about-item-1-1': {
             return isEng ?
-                'The protocol enables lenders to receive ' :
+                'The protocol enables lenders to receive ':
                 'Протокол дает возможность кредиторам получать ';
         }
         case 'about-item-1-2': {
             return isEng ?
-                'secure and stable income ' :
+                'secure and stable income ':
                 'безопасный и стабильный доход ';
         }
         case 'about-item-1-3': {
@@ -94,7 +99,7 @@ export const useTranslation = (text) => {
         }
         case 'about-item-3-2': {
             return isEng ?
-                'as a regulator and guarantor ' :
+                'as a regulator and guarantor' :
                 'регулятором и гарантом ';
         }
         case 'about-item-3-3': {
@@ -144,8 +149,8 @@ export const useTranslation = (text) => {
         }
         case 'emission-title': {
             return isEng ?
-                'Trillions ' :
-                'Триллионы ';
+                'Trillion ' :
+                'Триллион ';
         }
         case 'emissionMobile-title': {
             return isEng ?
