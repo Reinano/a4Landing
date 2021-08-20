@@ -23,9 +23,9 @@ const SocialMedia = () => {
                   </p>
 
                   <div className='socialMedia__icons'>
-                      <div className='socialMedia__icon socialMedia__icon_telegram'> </div>
-                      <div className='socialMedia__icon socialMedia__icon_instagram'> </div>
-                      <div className='socialMedia__icon socialMedia__icon_twitter'> </div>
+                      <a className='socialMedia__icon socialMedia__icon_telegram' href="#"> </a>
+                      <a className='socialMedia__icon socialMedia__icon_instagram' href="#"> </a>
+                      <a className='socialMedia__icon socialMedia__icon_twitter' href="#"> </a>
                   </div>
 
                   <div className='socialMedia__background'> </div>

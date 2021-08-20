@@ -1,5 +1,6 @@
 import React from 'react';
 import {_t} from "../common/translator";
+import Calculator from "../common/Calculator";
 
 const SwapCalculator = () => {
 
@@ -21,9 +22,7 @@ const SwapCalculator = () => {
                       </h2>
                   </div>
 
-                  <div className='calculator'>
-
-                  </div>
+                  <Calculator/>
               </div>
           </div>
         </section>
