@@ -10,6 +10,7 @@ import CountDown from "../CountDown/CoutDown";
 import About from "../About/About";
 import Benefits from "../Benefits/Benefits";
 import ExternalResource from "../ExternalResource/ExternalResource";
+import Gallery from "../Gallerycard/Gallery";
 
 const Landing = () => {
     return (
@@ -23,6 +24,7 @@ const Landing = () => {
               <ExternalResource/>
               <Emission/>
               <SwapCalculator/>
+              <Gallery/>
               <Roadmap/>
               <SocialMedia/>
             </main>
