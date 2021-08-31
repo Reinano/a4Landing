@@ -11,6 +11,9 @@
 *:before {
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 
 body {
   width: 100%;
@@ -18,7 +21,12 @@ body {
 
   background: url('../img/siteBg1.jpg');
   background-size: contain;
+
+  &.bodyOverflowHidden {
+    overflow: hidden;
+  }
 }
+
 
 a {
   text-decoration: none;
@@ -32,6 +40,13 @@ button {
 }
 li {
   list-style: none;
+}
+
+
+@media (max-width: 1366px) {
+  *:focus {
+    outline: 1px solid #8532FD;
+  }
 }
 //   ---     HUGE IMPORTS HERE LIKE MODULES OR HUGE PINUSES   ---   //
 
