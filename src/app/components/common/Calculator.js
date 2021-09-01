@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import a4converticon from '../../../../src/img/a4convertericon.svg';
 import iconbnb from '../../../../src/img/iconbnb.svg';
 
-
 const Calculator = () => {
   const [isActive, setIsActive] = useState(1);
   const [selectOne, setSelectOne] = useState(false);

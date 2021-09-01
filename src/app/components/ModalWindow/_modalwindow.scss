@@ -1,0 +1,241 @@
+.modal {
+
+  &Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+  }
+
+  &Body {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    // width: 48%;
+    width: 930px;
+    height: 432px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+    background: #CDF55B;
+    border-radius: 60px;
+    z-index: 51;
+
+    &__bgRocket {
+      align-self: center;
+      width: 63%;
+      height: 167%;
+      position: absolute;
+      right: -10%;
+      top: -25%;
+      background: url('../../../img/rocketimg.png') no-repeat left;
+      background-size: cover;
+    }
+  }
+
+  &Subscribe {
+    padding: 75px 70px 75px 70px;
+  }
+
+  &__buttonClose {
+    width: 20px;
+    height: 20px;
+    background: url('../../../img/iconcross.svg') no-repeat center;
+    border: none;
+    position: absolute;
+    right: 5.8%;
+    top: 12.5%;
+    outline: 0.5px solid transparent;
+    &:hover {
+      outline-color: #30125C;
+      opacity: 0.5;
+    }
+
+  }
+
+  &__title {
+    font-size: 42px;
+    margin-bottom: 15px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+  }
+
+  &__desc {
+    font-size: 21px;
+    max-width: 75%;
+    margin-bottom: 75px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+  }
+  &__inputError {
+    font-size: 18px;
+    font-style: italic;
+    color: red;
+    margin-bottom: 10px;
+    margin: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 499px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #30125C;
+
+    label {
+      width: 100%;
+    }
+
+    &_email {
+      padding: 4.8% 11.5% 4.8% 2.1%;
+      color: #30125C;
+      width: 100%;
+      font-size: 21px;
+      background: #FFFFFF;
+      border: 1px solid #9788AD;
+      box-sizing: border-box;
+      border-radius: 14px;
+    }
+    &_submit {
+      position: absolute;
+      font-size: 0;
+      right: 0;
+      width: 69px;
+      height: 100%;
+      border-radius: 10px;
+      background: #30125C url('../../../img/modalarrow.svg') no-repeat center;
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    &Body {
+      width: 80%;
+      height: auto;
+      min-height: 230px;
+    }
+    &Subscribe {
+      padding: 45px 40px 45px 40px;
+    }
+    &__bgRocket {
+      right: -6%;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: 16px;
+    }
+    &__form {
+      width: 100%;
+      &_submit {
+        width: 15%;
+      }
+    }
+  }
+}
+@media (max-width: 812px) {
+  .modal {
+    &Subscribe {
+      padding: 35px 30px 35px 30px;
+    }
+    &Body {
+      width: 83%;
+      border-radius: 40px;
+      &__bgRocket {
+        width: 50%;
+        height: 150%;
+        top: -30%;
+        right: 0;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+      }
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__desc {
+      max-width: 100%;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    &__inputError {
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin: 0;
+    }
+
+    &__form {
+      flex-direction: column;
+
+      &_email {
+        padding: 10px 10px;
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+      &_submit {
+        position: static;
+        align-self: center;
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+        color: #ffffff;
+        background: #30125C;
+        border-radius: 25px;
+        border: none;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .modal {
+
+    &Subscribe {
+      padding-top: 230px;
+    }
+    &Body {
+      &__bgRocket {
+        width: 100%;
+        height: 75%;
+        top: -10%;
+        right: 0%;
+        transform: rotate(45deg);
+      }
+    }
+    &__buttonClose {
+      top: 35px;
+      right: 30px;
+    }
+    &__title {
+      font-size: 21px;
+    }
+    &__desc {
+      font-size: 16px;
+    }
+    &__inputError {
+      font-size: 13px;
+    }
+
+  }
+}
