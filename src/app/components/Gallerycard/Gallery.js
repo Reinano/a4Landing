@@ -14,7 +14,7 @@ const Gallery = () => {
             </span>NFT Gallery</h2>
             <a className="gallery__link" href="">
               <span></span>
-              to 3d Gallery
+              Go to 3d Gallery
             </a>
           </div>
           <div className="gallery__items">
