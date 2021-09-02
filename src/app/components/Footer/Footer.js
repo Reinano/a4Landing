@@ -1,6 +1,6 @@
 import React from 'react';
 import {scrollToTop} from "../common/scroll";
-import {Link} from "react-router-dom";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import {_t} from "../common/translator";
 const Footer = () => {
 
@@ -16,23 +16,23 @@ const Footer = () => {
                       Leveraged Farming Made Easy With A4 Tokens.
                   </div>
               </div>
-              <Link to="top" className='footer__mobileScrollToTop' onClick={scrollToTop()}> </Link>
+              <Link to='header' smooth={true} className='footer__mobileScrollToTop'> </Link>
               <div className='footer__column footer__column_second'>
                  <ul className='footer__navigationList'>
                     <li>
-                       <a>{_t('nav-about')}</a>
+                        <Link to='about' smooth={true}>{_t('nav-about')}</Link>
                    </li>
                    <li>
-                       <a>{_t('nav-offer')}</a>
+                       <Link to='benefits' smooth={true}>{_t('nav-offer')}</Link>
                    </li>
                    <li>
-                       <a>{_t('nav-tokenomics')}</a>
+                       <Link to='tokenomics' smooth={true}>{_t('nav-tokenomics')}</Link>
                    </li>
                    <li>
-                       <a>{_t('nav-roadmap')}</a>
+                       <Link to='roadmap' smooth={true}>{_t('nav-roadmap')}</Link>
                    </li>
                    <li>
-                       <a>{_t('nav-social')}</a>
+                       <Link to='social' smooth={true}>{_t('nav-social')}</Link>
                    </li>
                  </ul>
               </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                           <div className='footer__appStore'> </div>
                           <div className='footer__googlePlay'> </div>
                       </div>
-                      <Link to="top" className='footer__scrollToTop' onClick={scrollToTop()}> </Link>
+                      <Link to='header' smooth={true} className='footer__scrollToTop'> </Link>
                   </div>
                   <p className='footer__legalInformation'>
                       {_t('footer-license')}
