@@ -41,23 +41,22 @@
   }
 
   &InnerContainer {
-    width: 1450px;
-    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
   }
 
   &__items {
     display: flex;
-    width: 100%;
     grid-gap: 2.5%;
+    padding-left: 12%;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    }
   }
   &__item {
     width: 22.5%;
@@ -147,10 +146,10 @@
 }
 @media (max-width: 1660px) {
   .gallery {
-    &__background {
-      padding: 100px 0 170px;
-      background: #F9FBFC;
-    }
+
+    padding: 100px 0 170px;
+    background: #F9FBFC;
+
     &__item {
       &Img {
         height: 310px;
@@ -164,12 +163,14 @@
 @media (max-width: 1440px) {
   .gallery {
 
-    &__background {
-      padding: 90px 0 150px;
-      background: #F9FBFC;
-    }
+    padding: 90px 0 150px;
+    background: #F9FBFC;
+
     &__header {
       margin-bottom: 50px;
+    }
+    &__items {
+      padding-left: 10%;
     }
     &__item {
       &Img {
@@ -218,10 +219,10 @@
 }
 @media (max-width: 1024px) {
   .gallery {
-    &__background {
-      padding: 80px 0 150px;
-      background: #F9FBFC;
-    }
+
+    padding: 80px 0 150px;
+    background: #F9FBFC;
+
     &__link {
       width: 181px;
       height: 60px;
@@ -235,12 +236,15 @@
 }
 @media (max-width: 812px) {
   .gallery {
-    &__background {
-      padding: 70px 0 120px;
-      background: #F9FBFC;
-    }
+
+    padding: 70px 0 120px;
+    background: #F9FBFC;
+
     &__link {
       font-size: 13px;
+    }
+    &__items {
+      padding-left: 8.5%;
     }
     &__item {
       &InfoNumber {
@@ -256,10 +260,9 @@
 }
 @media (max-width: 500px) {
   .gallery {
-    &__background {
 
-      position: relative;
-    }
+    position: relative;
+
     &__link {
       position: absolute;
       left: 30%;

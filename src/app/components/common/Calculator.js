@@ -28,14 +28,12 @@ const Calculator = () => {
          href="#">
          <span>Swap</span></div>
         <div
-        className={isActive === 2 ? "calculator__tab isActive" : "calculator__tab"}
-        onClick={() => toggleTab(2)}
-        href="#">
+        className="calculator__tab"
+        >
         <span>Liquidity</span></div>
         <div
-        className={isActive === 3 ? "calculator__tab isActive" : "calculator__tab"}
-        onClick={() => toggleTab(3)}
-        href="#">
+        className="calculator__tab"
+        >
         <span>Stacking</span></div>
       </div>
       <div className="calculator__tabContents">
