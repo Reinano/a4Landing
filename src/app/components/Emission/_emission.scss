@@ -338,7 +338,9 @@
       &_circle {
         display: none;
       }
-
+    }
+    &__circleGraph {
+      display: none;
     }
     &__innerWrapper {
       justify-content: center;
@@ -432,6 +434,7 @@
     }
   }
 }
+
 @media (max-width: 500px) {
   .emission {
     &__innerWrapper {

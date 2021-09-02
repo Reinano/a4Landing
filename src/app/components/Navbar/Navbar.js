@@ -50,7 +50,7 @@ const Navbar = () => {
             <div className="navBurgerMenu">
               <div className={sidebar ? "navBurgerMenu__logo navBurgerMenu__logo_active" : "navBurgerMenu__logo"}></div>
               <input onClick={showSidebar} className="navBurgerMenu__toogle" id="navBurgerMenu__toogle" type="checkbox"/>
-              <label className={sidebar ? "navBurgerMenu__button navBurgerMenu__button_active" : "navBurgerMenu__button"} for="navBurgerMenu__toogle">
+              <label className={sidebar ? "navBurgerMenu__button navBurgerMenu__button_active" : "navBurgerMenu__button"} htmlFor="navBurgerMenu__toogle">
                 <span className={sidebar ? "navBurgerMenu__span navBurgerMenu__span_active" : "navBurgerMenu__span"}></span>
                 <span className={sidebar ? "navBurgerMenu__spanCross navBurgerMenu__spanCross_active" : "navBurgerMenu__spanCross"}></span>
               </label>

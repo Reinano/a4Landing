@@ -341,6 +341,9 @@
 }
 @media (max-width: 428px) {
   .footer {
+    &Inner {
+      grid-template-rows: 75px 30px 50px 94px auto;
+    }
     &__navigationList {
       display: grid;
       grid-template-columns: 141px 141px;
