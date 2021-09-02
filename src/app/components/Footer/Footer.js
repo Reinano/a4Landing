@@ -16,7 +16,9 @@ const Footer = () => {
                       Leveraged Farming Made Easy With A4 Tokens.
                   </div>
               </div>
-              <Link className='footer__mobileScrollToTop' onClick={scrollToTop()}> </Link>
+
+              <Link to='header' smooth={true} className='footer__mobileScrollToTop'> </Link>
+
               <div className='footer__column footer__column_second'>
                  <ul className='footer__navigationList'>
                     <li>
@@ -42,7 +44,9 @@ const Footer = () => {
                           <div className='footer__appStore'> </div>
                           <div className='footer__googlePlay'> </div>
                       </div>
-                      <Link className='footer__scrollToTop' onClick={scrollToTop()}> </Link>
+
+                      <Link to='header' smooth={true} className='footer__scrollToTop'> </Link>
+
                   </div>
                   <p className='footer__legalInformation'>
                       {_t('footer-license')}
