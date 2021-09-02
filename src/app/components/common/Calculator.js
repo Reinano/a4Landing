@@ -55,26 +55,26 @@ const Calculator = () => {
                     <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
                     {selectCurrencyFirstField}
                   </div>
-                  <div class="calculator__selectContent">
+                  <div className="calculator__selectContent">
                     <div onClick={() => setSelectCurrencyFirstField('BNB')}>
                       <input id="singleSelect" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
-                      <label for="singleSelect" className="__select__label" >BNB</label>
+                      <label htmlFor="singleSelect" className="__select__label" >BNB</label>
                     </div>
                     <div onClick={() => setSelectCurrencyFirstField('a4')}>
                       <input id="singleSelect0" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={a4converticon} alt="iconbnb"/>
-                      <label for="singleSelect0" className="__select__label">A4</label>
+                      <label htmlFor="singleSelect0" className="__select__label">A4</label>
                     </div>
                     <div onClick={() => setSelectCurrencyFirstField('444')}>
                       <input id="singleSelect1" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
-                      <label for="singleSelect1" className="__select__label" >444</label>
+                      <label htmlFor="singleSelect1" className="__select__label" >444</label>
                     </div>
                     <div onClick={() => setSelectCurrencyFirstField('555')}>
                       <input id="singleSelect2" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
-                      <label for="singleSelect2" className="__select__label">555</label>
+                      <label htmlFor="singleSelect2" className="__select__label">555</label>
                     </div>
                   </div>
                 </div>
@@ -92,26 +92,26 @@ const Calculator = () => {
                     <img className="calculator__select_icon" src={a4converticon} alt="iconbnb"/>
                     {selectCurrencySecondField}
                   </div>
-                  <div class="calculator__selectContent">
+                  <div className="calculator__selectContent">
                     <div onClick={() => setSelectCurrencySecondField('BNB')}>
                       <input id="singleSelect" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
-                      <label for="singleSelect"className="__select__label" > BNB</label>
+                      <label htmlFor="singleSelect"className="__select__label" > BNB</label>
                     </div>
                     <div onClick={() => setSelectCurrencySecondField('A4')}>
                       <input id="singleSelect0" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={a4converticon} alt="iconbnb"/>
-                      <label for="singleSelect0" className="__select__label" >A4</label>
+                      <label htmlFor="singleSelect0" className="__select__label" >A4</label>
                     </div>
                     <div onClick={() => setSelectCurrencySecondField('444')}>
                       <input id="singleSelect1" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
-                      <label for="singleSelect1" className="__select__label" >444</label>
+                      <label htmlFor="singleSelect1" className="__select__label" >444</label>
                     </div>
                     <div onClick={() => setSelectCurrencySecondField('555')}>
                       <input id="singleSelect2" className="__select__input" type="radio" name="singleSelect" />
                       <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
-                      <label for="singleSelect2" className="__select__label" >555</label>
+                      <label htmlFor="singleSelect2" className="__select__label" >555</label>
                     </div>
                   </div>
                 </div>

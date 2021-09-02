@@ -1,9 +1,7 @@
 .gallery {
+  padding: 116px 0 202px;
+  background: #F9FBFC;
 
-  &__background {
-    padding: 116px 0 202px;
-    background: #F9FBFC;
-  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -42,12 +40,23 @@
     }
   }
 
+  &InnerContainer {
+    width: 1450px;
+    margin: 0 auto;
+  }
+
   &__items {
     display: flex;
     grid-gap: 37px;
     flex-wrap: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    }
   }
   &__item {
     width: 335px;
