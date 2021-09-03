@@ -22,11 +22,6 @@
     &_purple{
       color: #30125C;
     }
-    &-link{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
   }
   &__menu{
     display: flex;
@@ -345,14 +340,13 @@
     }
     &BurgerMenu {
       display: flex;
+      width: fit-content;
       margin-top: -15px;
     }
   }
 }
 @media (max-width: 428px) {
-  .nav__sidebar {
-    height: 100vh;
-  }
+
   .navBurgerMenu {
     &__logo_active {
       display: block;

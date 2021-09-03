@@ -3,6 +3,9 @@
   height: auto;
   padding: 8% 0;
   overflow: hidden;
+  background: url('../../../img/footerrightimg.png') no-repeat right;
+  background-size: contain;
+  background-position-x: 103%;
 
   &Inner{
     display: flex;
@@ -126,12 +129,23 @@
   }
 }
 @media (max-width:1660px){
+  .footer {
+    background-position-x: 104%;
+  }
 
   .footer__legalInformation {
     max-width: 630px;
   }
 }
+@media (max-width: 1538px) {
+  .footer {
+    background-position-x: 105%;
+  }
+}
 @media (max-width: 1440px) {
+  .footer {
+    background-position-x: 107%;
+  }
   .footer__description {
     width: 250px;
     font-size: 18px;
@@ -157,6 +171,7 @@
 
 @media (max-width:1200px) {
   .footer {
+    background-position-x: 111%;
 
     &__logo {
       margin-bottom: 26px;
@@ -206,6 +221,9 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  background: none;
+}
 @media (max-width: 868px) {
   .footer {
 
@@ -250,6 +268,8 @@
 }
 @media (max-width: 812px) {
   .footer {
+    background: none;
+    
     &__navigationList {
       font-size: 13px;
     }

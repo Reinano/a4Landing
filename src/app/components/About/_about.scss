@@ -56,7 +56,7 @@
       height: 124px;
       background: url('../../../img/specularball.png') no-repeat center;
       background-size: contain;
-      opacity: 0.3;
+      filter: blur(10px);
     }
   }
 
@@ -406,7 +406,8 @@
           right: -30px;
           border-radius: 50%;
           opacity: 1;
-          background: #f9fbfc;
+          background: url('../../../img/specularball.png') no-repeat center;
+          background-size: contain;
           z-index: 5;
         }
     }
@@ -435,14 +436,26 @@
       }
     }
     &__background {
+      // &_imgOne {
+      //   width: 600px;
+      //   height: 600px;
+      //   left: -1em;
+      //   top: -17%;
+      //   background-position-x: -10em;
+      //   background-position-y: 2em;
+      //   background-size: cover;
+      // }
       &_imgOne {
-        width: 600px;
-        height: 600px;
-        left: -1em;
-        top: -17%;
-        background-position-x: -10em;
-        background-position-y: 2em;
+        width: 142%;
+        height: 435px;
+        top: -20px;
+        left: -26%;
+        right: auto;
+        background: url('../../../img/mobileaboutbg.png') no-repeat center;
         background-size: cover;
+      }
+      &_common {
+        display: none;
       }
     }
   }
