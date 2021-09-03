@@ -4,7 +4,8 @@ const Roadmap = () => {
 
   return (
       <>
-          <section className='common__background_purple' name='roadmap'>
+          <section className='roadmap' name='roadmap'>
+              <div className="roadmap_bg"></div>
               <div className='container'>
                     <span className='common__number common__number_green'>
                         07

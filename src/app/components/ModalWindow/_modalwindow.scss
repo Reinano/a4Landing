@@ -95,6 +95,8 @@
     line-height: 140%;
     letter-spacing: 0.02em;
     color: #30125C;
+    border-radius: 14px;
+    overflow: hidden;
 
     label {
       width: 100%;
@@ -116,6 +118,7 @@
       right: 0;
       width: 69px;
       height: 100%;
+      border: none;
       border-radius: 10px;
       background: #30125C url('../../../img/modalarrow.svg') no-repeat center;
       cursor: pointer;
@@ -149,7 +152,7 @@
     &__form {
       width: 100%;
       &_submit {
-        width: 15%;
+        width: 63px;
       }
     }
   }

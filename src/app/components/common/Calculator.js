@@ -46,7 +46,7 @@ const Calculator = () => {
 
               </div>
               <div className="calculator__fieldInput">
-                <input className="calculator__fieldInputMain" type="number" placeholder="00.00"/>
+                <input className="calculator__fieldInputMain" valueType="number" placeholder="00.00"/>
                 <div className="calculator__select" data-state={selectOne ? "active" : ""}>
                   <div className="calculator__selectCurrency" data-default={selectCurrencyFirstField} onClick={showSelectOne}>
                     <img className="calculator__select_icon" src={iconbnb} alt="iconbnb"/>
@@ -83,7 +83,7 @@ const Calculator = () => {
                 <span>{swap ? "from" : "to"}</span>
               </div>
               <div className="calculator__fieldInput">
-                <input className="calculator__fieldInputMain" type="number" placeholder="00.00"/>
+                <input className="calculator__fieldInputMain" valueType="number" placeholder="00.00"/>
                 <div className="calculator__select" data-state={selectTwo ? "active" : ""}>
                   <div className="calculator__selectCurrency" data-default={selectCurrencySecondField} onClick={showSelectTwo}>
                     <img className="calculator__select_icon" src={a4converticon} alt="iconbnb"/>

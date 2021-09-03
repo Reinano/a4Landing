@@ -1,7 +1,19 @@
 .externalResourse {
   width: 100%;
   height: auto;
-  padding: 130px 0;
+  padding: 130px 0 230px;
+  position: relative;
+
+  &_bg {
+    width: 94%;
+    height: 246%;
+    position: absolute;
+    left: -6%;
+    top: -121%;
+    background: url('../../../img/extresoursebg.png') no-repeat center;
+    background-size: auto;
+    z-index: -1;
+  }
 
   &Inner {
     width: calc(100% - 14.5%);
@@ -256,6 +268,9 @@
   .externalResourse {
     padding-top: 0;
     margin-top: -100px;
+    &_bg {
+      display: none;
+    }
     &Inner {
       position: relative;
       width: 311px;

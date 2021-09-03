@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import strelka from '../../../../src/img/strelka.svg';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import {LanguageContext} from '../common/LanguageContext';
@@ -25,7 +25,10 @@ const Navbar = () => {
 
     const [sidebar, setSidebar] = useState(false);
 
-    const showSidebar = () => setSidebar(!sidebar);
+    const showSidebar = () => {
+      setSidebar(!sidebar);
+    }
+
 
     const { lang, toggleLang } = React.useContext(LanguageContext);
   return (

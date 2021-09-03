@@ -11,6 +11,7 @@ const ExternalResource = () => {
   return (
     <>
       <section className="externalResourse">
+        <div className="externalResourse_bg"></div>
         <div className="container">
           <div className="externalResourseInner">
             <div className="externalResourse__item externalResourse__item_one">
