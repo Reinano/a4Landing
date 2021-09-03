@@ -7,7 +7,7 @@ const Roadmap = () => {
           <section className='common__background_purple' name='roadmap'>
               <div className='container'>
                     <span className='common__number common__number_green'>
-                        06
+                        07
                     </span>
                   <h2 className='common__h2 common__h2_white'>
                       RoadMap

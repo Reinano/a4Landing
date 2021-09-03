@@ -11,7 +11,7 @@ const SocialMedia = () => {
               <section className='socialMedia__container' name='social'>
 
                   <span className='common__number'>
-                      07
+                      08
                   </span>
                   <h2 className='common__h2'>
                       {_t('social-title')}
