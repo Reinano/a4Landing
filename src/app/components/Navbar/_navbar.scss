@@ -49,7 +49,7 @@
     letter-spacing: 2%;
     color: #30125C;
   }
-  &__languageItem {
+    &__languageItem {
     display: flex;
     flex-direction: row;
     grid-gap: 16px;
@@ -67,8 +67,15 @@
       color: #30125C;
       border: 0;
     }
-    &_imgNone {
-      display: none;
+    &_imgRu {
+      width: 20px;
+      height: 20px;
+      background: url('./../../../../src/img/ruFlag.svg') no-repeat center;
+    }
+    &_imgEn {
+      width: 20px;
+      height: 20px;
+      background: url('./../../../../src/img/engFlag.svg') no-repeat center;
     }
   }
 

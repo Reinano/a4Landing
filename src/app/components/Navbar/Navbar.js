@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import flagicon from '../../../../src/img/flagicon.svg';
 import strelka from '../../../../src/img/strelka.svg';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import {LanguageContext} from '../common/LanguageContext';
@@ -12,7 +11,7 @@ const LanguageSwitcher = () => {
 
   return (
       <div className="nav__languageItem" onClick={toggleLang}>
-        <img className={lang ? 'nav__languageItem_img' : 'nav__languageItem_imgNone'} src={flagicon} alt="flagicon"/>
+        <div className={lang ? 'nav__languageItem_imgRu' : 'nav__languageItem_imgEn'}/>
         <button className="nav__languageItemBtn nav__languageItemBtn_bg">
           <div className="nav__languageItemBtn_text">{lang ? 'Russian' : 'English'}</div>
         </button>
