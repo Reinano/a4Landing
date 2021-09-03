@@ -169,7 +169,7 @@ export const useTranslation = (text) => {
         }
         case 'emission-item-1': {
             return isEng ?
-                'Stacking' :
+                'Staking \n Rewards' :
                 'Стейкинг';
         }
         case 'emission-item-2': {
