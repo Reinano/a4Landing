@@ -97,8 +97,10 @@
     line-height: 140%;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    &_bold{
-      font-weight: bold;
+    span {
+      &:first-child {
+        font-weight: bold;
+      }
     }
   }
 }
