@@ -262,6 +262,177 @@ export const useTranslation = (text) => {
                 'A4-token insurance using KeepPrice technology ' :
                 'Страховку a4-token за счет KeepPrice';
         }
+        case 'calculator-button': {
+            return isEng ?
+                'Convert ' :
+                'Конвертировать';
+        }
+        case 'calculator-swap': {
+            return isEng ?
+                'Swap ' :
+                'Обмен';
+        }
+        case 'calculator-liquidity': {
+            return isEng ?
+                'Liquidity ' :
+                'Ликвидность';
+        }
+        case 'calculator-staking': {
+            return isEng ?
+                'Staking ' :
+                'Стейкинг';
+        }
+        case 'roadmap-title': {
+            return isEng ?
+                'RoadMap ' :
+                'Roadmap';
+        }
+        case 'roadmap-phase-title': {
+            return isEng ?
+                'Phase ' :
+                'Phase';
+        }
+        case 'roadmap-phase-date-one': {
+            return isEng ?
+                'August — October 2021 ' :
+                'Август - Октябрь 2021';
+        }
+        case 'roadmap-phase-date-two': {
+            return isEng ?
+                'July — September 2021 ' :
+                'Июль - Сентябрь 2021';
+        }
+        case 'roadmap-phase-date-three': {
+            return isEng ?
+                'October — December 2021 ' :
+                'Октябрь - Декабрь 2021';
+        }
+        case 'phaseone-item-1': {
+            return isEng ?
+                'Launch of the token ' :
+                'Launch of the token';
+        }
+        case 'phaseone-item-2': {
+            return isEng ?
+                'TokenSale ' :
+                'TokenSale';
+        }
+        case 'phaseone-item-3-1': {
+            return isEng ?
+                'A custodial wallet ' :
+                'A custodial wallet';
+        }
+        case 'phaseone-item-3-2': {
+            return isEng ?
+                'with A4 staking capability (IOS / Android) ' :
+                'with A4 staking capability (IOS / Android)';
+        }
+        case 'phaseone-item-4-1': {
+            return isEng ?
+                'Listing ' :
+                'Listing';
+        }
+        case 'phaseone-item-4-2': {
+            return isEng ?
+                ' on centralized exchanges, as well as CoinMarketCap ' :
+                ' on centralized exchanges, as well as CoinMarketCap';
+        }
+        case 'phaseone-item-5-1': {
+            return isEng ?
+                ' Adding liquidity ' :
+                ' Adding liquidity';
+        }
+        case 'phaseone-item-5-2': {
+            return isEng ?
+                ' pairs on Pancake Swap ' :
+                ' pairs on Pancake Swap';
+        }
+        case 'phasetwo-item-1-1': {
+            return isEng ?
+                ' Virtual, endless, ' :
+                ' Virtual, endless,';
+        }
+        case 'phasetwo-item-1-2': {
+            return isEng ?
+                ' first in the world NFT museum-shop (Beta) ' :
+                ' first in the world NFT museum-shop (Beta)';
+        }
+        case 'phasetwo-item-2-1': {
+            return isEng ?
+                ' Adding Payment Systems ' :
+                ' Adding Payment Systems';
+        }
+        case 'phasetwo-item-2-2': {
+            return isEng ?
+                ' (VISA / MasterCard) ' :
+                ' (VISA / MasterCard)';
+        }
+        case 'phasetwo-item-3': {
+            return isEng ?
+                ' Creation of AUSD stable coin' :
+                ' Creation of AUSD stable coin';
+        }
+        case 'phasetwo-item-4': {
+            return isEng ?
+                ' Launch DEX ' :
+                ' Launch DEX';
+        }
+        case 'phasetwo-item-5-1': {
+            return isEng ?
+                ' Launch ' :
+                ' Launch';
+        }
+        case 'phasetwo-item-5-2': {
+            return isEng ?
+                ' of the decentralized financial game "Safe" ' :
+                ' of the decentralized financial game "Safe"';
+        }
+        case 'phasethree-item-1': {
+            return isEng ?
+                ' Infinite liquidity mechanisms ' :
+                ' Infinite liquidity mechanisms';
+        }
+        case 'phasethree-item-2': {
+            return isEng ?
+                ' Launch KeepPrice system ' :
+                ' Launch KeepPrice system';
+        }
+        case 'phasethree-item-3-1': {
+            return isEng ?
+                ' Launch virtual, endless' :
+                ' Launch virtual, endless';
+        }
+        case 'phasethree-item-3-2': {
+            return isEng ?
+                ' NFT museum-shop for all the world ' :
+                ' NFT museum-shop for all the world';
+        }
+        case 'externalResourse-title': {
+            return isEng ?
+                ' Everything in one place ' :
+                ' Все в одном месте';
+        }
+        case 'externalResourse-link': {
+            return isEng ?
+                ' Link ' :
+                ' Ссылка';
+        }
+        case 'externalResourse-swap': {
+            return isEng ?
+                ' Swap ' :
+                ' Обмен';
+        }
+        case 'externalResourse-liquidity': {
+            return isEng ?
+                ' Liquidity pool ' :
+                ' Пул ликвидности';
+        }
+        case 'externalResourse-staking': {
+            return isEng ?
+                ' Staking ' :
+                ' Стейкинг';
+        }
+
 
 
         default: return 'no-translation'

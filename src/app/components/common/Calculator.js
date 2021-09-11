@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import a4converticon from '../../../../src/img/a4convertericon.svg';
 import iconbnb from '../../../../src/img/iconbnb.svg';
+import {_t} from "../common/translator";
+
 
 const Calculator = () => {
   const [isActive, setIsActive] = useState(1);
@@ -26,15 +28,15 @@ const Calculator = () => {
          className={isActive === 1 ? "calculator__tab isActive" : "calculator__tab"}
          onClick={() => toggleTab(1)}
          href="#">
-         <span>Swap</span></div>
+         {_t('calculator-swap')}</div>
         <div
         className="calculator__tab"
         >
-        <span>Liquidity</span></div>
+        {_t('calculator-liquidity')}</div>
         <div
         className="calculator__tab"
         >
-        <span>Stacking</span></div>
+        {_t('calculator-staking')}</div>
       </div>
       <div className="calculator__tabContents">
         <div
@@ -114,7 +116,7 @@ const Calculator = () => {
                 </div>
               </div>
             </form>
-            <div className="calculator__convertBtn"><button className="calculator__convertBtn_button">Convert</button></div>
+            <div className="calculator__convertBtn"><button className="calculator__convertBtn_button">{_t('calculator-button')}</button></div>
           </div>
           <div
           className={isActive === 2 ? "calculator__tabContent calculator__tabContent_active" : "calculator__tabContent"}>
